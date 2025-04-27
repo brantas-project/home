@@ -1,0 +1,711 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <meta name="description" content="">
+        <meta name="author" content="">
+
+        <title>Brantas Makmur Towing</title>
+
+        <!-- CSS FILES -->                
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+        <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400&display=swap" rel="stylesheet">
+
+        <link href="css/bootstrap.beautified.css" rel="stylesheet">
+
+        <link href="css/bootstrap-icons.css" rel="stylesheet">
+
+        <link href="css/templatemo-tiya-golf-club.css" rel="stylesheet">
+
+    </head>
+    
+    <body>
+
+        <main>
+
+            <nav class="navbar navbar-expand-lg">                
+                <div class="container">
+                    <a class="navbar-brand d-flex align-items-center" href="index.html">
+                        <img src="images/logo.png" class="navbar-brand-image img-fluid" alt="Tiya Golf Club">
+                        <span class="navbar-brand-text">
+                            Brantas
+                            <small>Makmur Towing</small>
+                        </span>
+                    </a>
+
+                    <div class="d-lg-none ms-auto me-3">
+                        <a class="btn custom-btn custom-border-btn" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" aria-controls="offcanvasExample">Pesan Towing/Derek</a>
+                    </div>
+    
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+    
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav ms-lg-auto">
+                            <li class="nav-item">
+                                <a class="nav-link click-scroll" href="#section_1">Beranda</a>
+                            </li>
+    
+                            <li class="nav-item">
+                                <a class="nav-link click-scroll" href="#section_2">Tentang Kami</a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link click-scroll" href="#section_3">Jasa</a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link click-scroll" href="#section_4">Berita</a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link click-scroll" href="#section_5">Hubungi Kami</a>
+                            </li>
+
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarLightDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">Halaman</a>
+
+                                <ul class="dropdown-menu dropdown-menu-light" aria-labelledby="navbarLightDropdownMenuLink">
+                                    <li><a class="dropdown-item" href="event-listing.html">Semua Berita</a></li>
+
+                                    <li><a class="dropdown-item" href="event-detail.html">Berita Terakhir</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+
+                        <div class="d-none d-lg-block ms-lg-3">
+                            <a class="btn custom-btn custom-border-btn" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" aria-controls="offcanvasExample">Pesan Towing / Derek</a>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+
+            <div class="offcanvas offcanvas-end" data-bs-scroll="true" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">   
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title text-white me-3" id="offcanvasExampleLabel">Pesan Towing / Derek <i class="bi-truck-flatbed"></i></h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>                 
+                
+                <ul class="nav nav-tabs justify-content-center" id="pesanTab" role="tablist">
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link active" id="pesan-sekarang-tab" data-bs-toggle="tab" data-bs-target="#pesan-sekarang" type="button" role="tab" aria-controls="pesan-sekarang" aria-selected="true">Pesan Sekarang</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="pesan-terjadwal-tab" data-bs-toggle="tab" data-bs-target="#pesan-terjadwal" type="button" role="tab" aria-controls="pesan-terjadwal" aria-selected="false">Tentukan Jadwal</button>
+                    </li>
+                </ul>
+            
+                <div class="tab-content offcanvas-body d-flex flex-column" id="pesanTabContent">
+                    <!-- Tab Pesan Sekarang -->
+                    <div class="tab-pane fade show active" id="pesan-sekarang" role="tabpanel" aria-labelledby="pesan-sekarang-tab">
+                        <div class="text-center my-4">
+                            <h4><a href="#" class="social-icon-item bi-whatsapp"> Whatsapp</a></h4>
+                        </div>
+                        <hr>
+                        <div class="text-center my-4">
+                            <h4><a href="#" class="social-icon-item bi-telephone"> Pangilan Darurat</a></h4>
+                        </div>
+                    </div>
+            
+                    <!-- Tab Pesan Terjadwal -->
+                    <div class="tab-pane fade" id="pesan-terjadwal" role="tabpanel" aria-labelledby="pesan-terjadwal-tab">
+                        <form class="custom-form member-login-form mt-4" action="#" method="post" role="form">
+                            <div class="customer-schedule-order">
+                                <div class="mb-4">
+                                    <label class="form-label mb-2" for="nama-lengkap">Nama Lengkap</label>
+                                    <input type="text" name="nama-lengkap" id="nama-lengkap" class="form-control" placeholder="Nama Lengkap" required>
+                                </div>
+                                <div class="mb-4">
+                                    <label class="form-label mb-2" for="nomor-kontak">Telepon / Whatsapp</label>
+                                    <input type="text" name="nomor-kontak" id="nomor-kontak" class="form-control" placeholder="Nomor Telepon / Whatsapp" required>
+                                </div>
+                                <div class="mb-4">
+                                    <label class="form-label mb-2 d-block">Jenis Muatan</label>
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="radio" name="jenis-muatan" id="muatan-mobil" value="Mobil" required>
+                                        <label class="form-check-label" for="muatan-mobil">Mobil</label>
+                                    </div>
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="radio" name="jenis-muatan" id="muatan-motor" value="Motor">
+                                        <label class="form-check-label" for="muatan-motor">Motor</label>
+                                    </div>
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="radio" name="jenis-muatan" id="muatan-lainnya" value="Lainnya">
+                                        <label class="form-check-label" for="muatan-lainnya">Lainnya</label>
+                                    </div>
+                                </div>                                
+                                <div class="mb-4">
+                                    <label class="form-label mb-2" for="lokasi-muat">Lokasi Muat</label>
+                                    <input type="text" name="lokasi-muat" id="lokasi-muat" class="form-control" placeholder="Lokasi Muat" required>
+                                </div>
+                                <div class="mb-4">
+                                    <label class="form-label mb-2" for="alamat-tujuan">Alamat Tujuan</label>
+                                    <input type="text" name="alamat-tujuan" id="alamat-tujuan" class="form-control" placeholder="Alamat Tujuan" required>
+                                </div>
+                                <div class="mb-4">
+                                    <label class="form-label mb-2" for="tanggal-muat">Tanggal Muat</label>
+                                    <input type="date" name="tanggal-muat" id="tanggal-muat" class="form-control" placeholder="Tanggal Muat" required>
+                                </div>
+                                <div class="form-check mb-4">
+                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                    <label class="form-check-label" for="flexCheckDefault">Centang jika kendaraan ini akan diasuransikan selama proses towing/derek.</label>
+                                </div>
+                                <div class="col-lg-5 col-md-7 col-8 mx-auto">
+                                    <button type="submit" class="form-control"><i class="bi-calendar-fill"></i> Buat</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            
+                <div class="mt-auto mb-5">
+                    <hr>
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#3D405B" fill-opacity="1" d="M0,224L34.3,192C68.6,160,137,96,206,90.7C274.3,85,343,139,411,144C480,149,549,107,617,122.7C685.7,139,754,213,823,240C891.4,267,960,245,1029,224C1097.1,203,1166,181,1234,160C1302.9,139,1371,117,1406,106.7L1440,96L1440,320L1405.7,320C1371.4,320,1303,320,1234,320C1165.7,320,1097,320,1029,320C960,320,891,320,823,320C754.3,320,686,320,617,320C548.6,320,480,320,411,320C342.9,320,274,320,206,320C137.1,320,69,320,34,320L0,320Z"></path></svg>
+                </div>
+            </div>
+            
+            
+
+            <section class="hero-section d-flex justify-content-center align-items-center" id="section_1">
+
+                <div class="section-overlay"></div>
+
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#3D405B" fill-opacity="1" d="M0,224L34.3,192C68.6,160,137,96,206,90.7C274.3,85,343,139,411,144C480,149,549,107,617,122.7C685.7,139,754,213,823,240C891.4,267,960,245,1029,224C1097.1,203,1166,181,1234,160C1302.9,139,1371,117,1406,106.7L1440,96L1440,0L1405.7,0C1371.4,0,1303,0,1234,0C1165.7,0,1097,0,1029,0C960,0,891,0,823,0C754.3,0,686,0,617,0C548.6,0,480,0,411,0C342.9,0,274,0,206,0C137.1,0,69,0,34,0L0,0Z"></path></svg>
+
+                <div class="container">
+                    <div class="row">
+
+                        <div class="col-lg-6 col-12 mb-5 mb-lg-0">
+                            <h2 class="text-white">Jasa Towing Derek</h2>
+
+                            <h1 class="cd-headline rotate-1 text-white mb-4 pb-2">
+                                <span>24 Jam</span>
+                                <span class="cd-words-wrapper">
+                                    <b class="is-visible">Tercepat</b>
+                                    <b>Terjangkau</b>
+                                    <b>Berpengalaman</b>
+                                </span>
+                            </h1>
+
+                            <div class="custom-btn-group">
+                                <a href="#section_2" class="btn custom-btn smoothscroll me-3">Pesan Sekarang</a>
+
+                                <a href="#section_3" class="link smoothscroll">Towing / Derek</a>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-6 col-12">
+                            <div class="ratio ratio-16x9">
+                                <iframe width="560" height="315" src="https://www.youtube.com/embed/1ZZW5jfIdqU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#ffffff" fill-opacity="1" d="M0,224L34.3,192C68.6,160,137,96,206,90.7C274.3,85,343,139,411,144C480,149,549,107,617,122.7C685.7,139,754,213,823,240C891.4,267,960,245,1029,224C1097.1,203,1166,181,1234,160C1302.9,139,1371,117,1406,106.7L1440,96L1440,320L1405.7,320C1371.4,320,1303,320,1234,320C1165.7,320,1097,320,1029,320C960,320,891,320,823,320C754.3,320,686,320,617,320C548.6,320,480,320,411,320C342.9,320,274,320,206,320C137.1,320,69,320,34,320L0,320Z"></path></svg>
+            </section>
+
+
+            <section class="about-section section-padding" id="section_2">
+                <div class="container">
+                    <div class="row">
+
+                        <div class="col-lg-12 col-12 text-center">
+                            <h2 class="mb-lg-5 mb-4">Tentang Brantas Makmur Towing</h2>
+                        </div>
+
+                        <div class="col-lg-5 col-12 me-auto mb-4 mb-lg-0">
+                            <h3 class="mb-3">Brantas Towing</h3>
+
+                            <p>
+                                <strong>Sejak 2018</strong>, Brantas Makmur Towing — divisi dari CV. Sumber Barokah Lestari — telah melayani jasa pengiriman kendaraan seperti single towing, tanza, dan car carrier.                                 
+                            </p>
+
+                            <p>
+                                Berbasis di Jawa Timur dan didukung jaringan perwakilan di seluruh Indonesia, kami siap melayani pengiriman antar kota dan provinsi. Dengan tim profesional dan peralatan modern, kami hadir 24 jam untuk memberikan layanan cepat, aman, dan terpercaya bagi kebutuhan transportasi kendaraan Anda.  
+                            </p>
+                        </div>
+
+                        <div class="col-lg-2 col-md-6 col-12 mb-4 mb-lg-0 mb-md-0">
+                            <div class="member-block">
+                                <div class="member-block-image-wrap">
+                                    <img src="images/members/nomor-satu.png" class="member-block-image img-fluid" alt="H 8591 FG">
+
+                                    <ul class="social-icon">
+                                        <li class="social-icon-item">
+                                            <a href="#" class="social-icon-link bi-whatsapp"></a>
+                                        </li>
+                                    </ul>
+                                </div>
+
+                                <div class="member-block-info d-flex align-items-center">
+                                    <h4>Towing</h4>
+
+                                    <p class="ms-auto">tersedia</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-2 col-md-6 col-12">
+                            <div class="member-block">
+                                <div class="member-block-image-wrap">
+                                    <img src="images/members/nomor-dua.png" class="member-block-image img-fluid" alt="B 9244 TIA">
+
+                                    <ul class="social-icon">                                        
+                                        <li class="social-icon-item">
+                                            <a href="#" class="social-icon-link bi-whatsapp"></a>
+                                        </li>
+                                    </ul>
+                                </div>
+
+                                <div class="member-block-info d-flex align-items-center">
+                                    <h4>Towing</h4>
+
+                                    <p class="ms-auto">tersedia</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-2 col-md-6 col-12">
+                            <div class="member-block">
+                                <div class="member-block-image-wrap">
+                                    <img src="images/members/nomor-tiga.png" class="member-block-image img-fluid" alt="">
+
+                                    <ul class="social-icon">
+                                        <li class="social-icon-item">
+                                            <a href="#" class="social-icon-link bi-whatsapp"></a>
+                                        </li>
+                                    </ul>
+                                </div>
+
+                                <div class="member-block-info d-flex align-items-center">
+                                    <h4>Derek</h4>
+
+                                    <p class="ms-auto">tersedia</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+
+                    </div>
+                </div>
+            </section>
+
+
+            <section class="section-bg-image">
+                <svg viewBox="0 0 1265 144" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><path fill="rgba(255, 255, 255, 1)" d="M 0 40 C 164 40 164 20 328 20 L 328 20 L 328 0 L 0 0 Z" stroke-width="0"></path> <path fill="rgba(255, 255, 255, 1)" d="M 327 20 C 445.5 20 445.5 89 564 89 L 564 89 L 564 0 L 327 0 Z" stroke-width="0"></path> <path fill="rgba(255, 255, 255, 1)" d="M 563 89 C 724.5 89 724.5 48 886 48 L 886 48 L 886 0 L 563 0 Z" stroke-width="0"></path><path fill="rgba(255, 255, 255, 1)" d="M 885 48 C 1006.5 48 1006.5 67 1128 67 L 1128 67 L 1128 0 L 885 0 Z" stroke-width="0"></path><path fill="rgba(255, 255, 255, 1)" d="M 1127 67 C 1196 67 1196 0 1265 0 L 1265 0 L 1265 0 L 1127 0 Z" stroke-width="0"></path></svg>
+
+                <div class="container">
+                    <div class="row">
+
+                        <div class="col-lg-6 col-12">
+                            <div class="section-bg-image-block">
+                                <h2 class="mb-lg-3">Tetap Terhubung dengan Informasi Terbaru!</h2>
+
+                                <p>
+                                    Berlanggananlah untuk mendapatkan pembaruan terkini seputar layanan kami, penawaran spesial, serta informasi penting lainnya yang dapat mendukung kebutuhan Anda. Jadilah yang pertama mengetahui setiap inovasi dari kami langsung di email Anda.
+                                </p>
+
+                                <form action="#" method="get" class="custom-form mt-lg-4 mt-2" role="form">
+                                    <div class="input-group input-group-lg">
+                                        <span class="input-group-text bi-envelope" id="basic-addon1"></span>
+
+                                        <input type="email" name="email" id="email" pattern="[^ @]*@[^ @]*" class="form-control" placeholder="Email" required="">
+
+                                        <button type="submit" class="form-control">Berlangganan</button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <svg viewBox="0 0 1265 144" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><path fill="rgba(255, 255, 255, 1)" d="M 0 40 C 164 40 164 20 328 20 L 328 20 L 328 0 L 0 0 Z" stroke-width="0"></path> <path fill="rgba(255, 255, 255, 1)" d="M 327 20 C 445.5 20 445.5 89 564 89 L 564 89 L 564 0 L 327 0 Z" stroke-width="0"></path> <path fill="rgba(255, 255, 255, 1)" d="M 563 89 C 724.5 89 724.5 48 886 48 L 886 48 L 886 0 L 563 0 Z" stroke-width="0"></path><path fill="rgba(255, 255, 255, 1)" d="M 885 48 C 1006.5 48 1006.5 67 1128 67 L 1128 67 L 1128 0 L 885 0 Z" stroke-width="0"></path><path fill="rgba(255, 255, 255, 1)" d="M 1127 67 C 1196 67 1196 0 1265 0 L 1265 0 L 1265 0 L 1127 0 Z" stroke-width="0"></path></svg>
+            </section>
+
+
+            <section class="membership-section section-padding" id="section_3">
+                <div class="container">
+                    <div class="row">
+
+                        <div class="col-lg-12 col-12 text-center mx-auto mb-lg-5 mb-4">
+                            <h2><span>Jasa</span> Towing / Derek</h2>
+                        </div>
+                        
+                        <div class="col-lg-6 col-12 mb-3 mb-lg-0">
+                            <h4 class="mb-4 pb-lg-2">Layanan Kami</h4>
+                        
+                            <div class="table-responsive">
+                                <table class="table text-center">
+                                    <thead>
+                                        <tr>
+                                            <th style="width: 34%;">Jaminan</th>
+                                            <th style="width: 22%;">Ketersediaan</th>
+                                        </tr>
+                                    </thead>
+                        
+                                    <tbody>
+                                        <tr>
+                                            <th scope="row" class="text-start">Pengemudi Berpengalaman & Handal</th>
+                                            <td>
+                                                <i class="bi-check-circle-fill"></i>
+                                            </td>
+                                        </tr>
+                        
+                                        <tr>
+                                            <th scope="row" class="text-start">Layanan 24/7 Siap Siaga</th>
+                                            <td>
+                                                <i class="bi-check-circle-fill"></i>
+                                            </td>
+                                        </tr>
+                        
+                                        <tr>
+                                            <th scope="row" class="text-start">Pelacakan GPS Real-Time</th>
+                                            <td>
+                                                <i class="bi-check-circle-fill"></i>
+                                            </td>
+                                        </tr>
+                        
+                                        <tr>
+                                            <th scope="row" class="text-start">Peralatan Derek Modern & Terawat</th>
+                                            <td>
+                                                <i class="bi-check-circle-fill"></i>
+                                            </td>
+                                        </tr>
+                        
+                                        <tr>
+                                            <th scope="row" class="text-start">Harga Transparan & Tanpa Biaya Tersembunyi</th>
+                                            <td>
+                                                <i class="bi-check-circle-fill"></i>
+                                            </td>
+                                        </tr>
+                                        
+                                        <tr>
+                                            <th scope="row" class="text-start">Pembayaran Digital & Transaksi Tunai</th>
+                                            <td>
+                                                <i class="bi-check-circle-fill"></i>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                        
+
+                        <div class="col-lg-5 col-12 mx-auto">
+                        <h4 class="mb-4 pb-lg-2">Tentukan Jadwal</h4>
+                            <form action="#" method="post" class="custom-form membership-form shadow-lg" role="form">
+                                <!-- <h4 class="text-white mb-4">Pemesanan Terjadwal</h4> -->
+
+                                    <div class="form-floating">
+                                        <input type="text" name="nama-lengkap" id="nama-lengkap" class="form-control" placeholder="Nama Lengkap" required="">
+                                        
+                                        <label for="floatingInput"> Nama Lengkap</label>
+                                    </div>
+
+                                    <div class="form-floating">
+                                        <input type="text" name="telepon-whatsapp" id="telepon-whatsapp" class="form-control" placeholder="Telepon / Whatsapp" required="">
+                                        
+                                        <label for="floatingInput"> Telepon / Whatsapp</label>
+                                    </div>
+                                    
+                                    <div class="form-floating mb-4">
+                                        <select class="form-control" id="jenis-muatan" name="jenis-muatan" required>
+                                            <option value="" disabled selected>Pilih jenis muatan</option>
+                                            <option value="Mobil">Mobil</option>
+                                            <option value="Motor">Motor</option>
+                                            <option value="Lainnya">Lainnya</option>
+                                        </select>
+                                        <label for="jenis-muatan">Jenis Muatan</label>
+                                    </div>                                    
+
+                                    <div class="form-floating">
+                                        <textarea class="form-control" id="lokasi-muat" name="lokasi-muat" placeholder="Alamat Muat"></textarea>
+                                        
+                                        <label for="floatingTextarea"> Lokasi Muat</label>
+                                    </div>
+
+                                    <div class="form-floating">
+                                        <textarea class="form-control" id="alamat-tujuan" name="alamat-tujuan" placeholder="Alamat Tujuan"></textarea>
+                                        
+                                        <label for="floatingTextarea"> Alamat Tujuan</label>
+                                    </div>
+
+                                    <div class="form-floating">
+                                        <input type="date" name="tanggal-muat" id="tanggal-muat" class="form-control" placeholder="Tanggal Muat" required="">
+                                        
+                                        <label for="floatingInput"> Tanggal Muat</label>
+                                    </div>
+
+                                    <div class="form-check mb-4 d-flex">
+                                        <input class="form-check-label" type="checkbox" value="" id="flexCheckDefault">
+                                        <label class="form-check-label text-white ms-1" for="flexCheckDefault">
+                                            Asuransikan selama proses towing/derek.
+                                        </label>
+                                    </div>
+                                    
+                                    
+
+                                    <button type="submit" class="form-control"><i class="bi-calendar-fill"></i> Buat</button>
+                                </div>
+                            </form>
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+
+
+            <section class="events-section section-bg section-padding" id="section_4">
+                <div class="container">
+                    <div class="row">
+
+                        <div class="col-lg-12 col-12">
+                            <h2 class="mb-lg-3">Berita</h2>
+                        </div>
+
+                        <div class="row custom-block mb-3">
+                            <div class="col-lg-2 col-md-4 col-12 order-2 order-md-0 order-lg-0">
+                                <div class="custom-block-date-wrap d-flex d-lg-block d-md-block align-items-center mt-3 mt-lg-0 mt-md-0">
+                                    <h6 class="custom-block-date mb-lg-1 mb-0 me-3 me-lg-0 me-md-0">21</h6>
+                                    
+                                    <strong class="text-white">April 2025</strong>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-4 col-md-8 col-12 order-1 order-lg-0">
+                                <div class="custom-block-image-wrap">
+                                    <a href="event-detail.html">
+                                        <img src="images/professional-golf-player.png" class="custom-block-image img-fluid" alt="">
+
+                                        <i class="custom-block-icon bi-link"></i>
+                                    </a>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-6 col-12 order-3 order-lg-0">
+                                <div class="custom-block-info mt-2 mt-lg-0">
+                                    <a href="event-detail.html" class="events-title mb-3">Jasa Towing Brantas – Antar Kendaraan Aman di Hari Kartini</a>
+
+                                    <p class="mb-0">
+                                        Setiap tanggal 21 April, bangsa Indonesia memperingati Hari Kartini. Hari ini adalah momen penting untuk mengenang Raden Adjeng Kartini, sosok perempuan hebat yang membuka jalan bagi kemajuan perempuan Indonesia. Ia memperjuangkan hak perempuan untuk mendapatkan pendidikan, kesempatan, dan kesetaraan. Semangat Kartini tidak hanya hidup dalam buku sejarah, tapi juga menginspirasi berbagai bidang, termasuk dunia usaha dan pelayanan jasa.
+                                    </p>
+
+                                    <div class="d-flex flex-wrap border-top mt-4 pt-3">
+
+                                        <div class="mb-4 mb-lg-0">
+                                            <div class="d-flex flex-wrap align-items-center mb-1">
+                                                <span class="custom-block-span">Dokumen:</span>
+
+                                                <p class="mb-0">Artikel</p>
+                                            </div>
+
+                                            <div class="d-flex flex-wrap align-items-center">
+                                                <span class="custom-block-span">Lokasi:</span>
+
+                                                <p class="mb-0">Lokal</p>
+                                            </div>
+                                        </div>
+
+                                        <div class="d-flex align-items-center ms-lg-auto">
+                                            <a href="event-detail.html" class="btn custom-btn">Baca Selengkapnya</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row custom-block custom-block-bg">
+                            <div class="col-lg-2 col-md-4 col-12 order-2 order-md-0 order-lg-0">
+                                <div class="custom-block-date-wrap d-flex d-lg-block d-md-block align-items-center mt-3 mt-lg-0 mt-md-0">
+                                    <h6 class="custom-block-date mb-lg-1 mb-0 me-3 me-lg-0 me-md-0">21</h6>
+                                    
+                                    <strong class="text-white">April 2025</strong>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-4 col-md-8 col-12 order-1 order-lg-0">
+                                <div class="custom-block-image-wrap">
+                                    <a href="event-detail.html">
+                                        <img src="images/professional-golf-player.png" class="custom-block-image img-fluid" alt="">
+
+                                        <i class="custom-block-icon bi-link"></i>
+                                    </a>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-6 col-12 order-3 order-lg-0">
+                                <div class="custom-block-info mt-2 mt-lg-0">
+                                    <a href="event-detail.html" class="events-title mb-3">Jasa Towing Brantas – Antar Kendaraan Aman di Hari Kartini</a>
+
+                                    <p class="mb-0">
+                                        Setiap tanggal 21 April, bangsa Indonesia memperingati Hari Kartini. Hari ini adalah momen penting untuk mengenang Raden Adjeng Kartini, sosok perempuan hebat yang membuka jalan bagi kemajuan perempuan Indonesia. Ia memperjuangkan hak perempuan untuk mendapatkan pendidikan, kesempatan, dan kesetaraan. Semangat Kartini tidak hanya hidup dalam buku sejarah, tapi juga menginspirasi berbagai bidang, termasuk dunia usaha dan pelayanan jasa.
+                                    </p>
+
+                                    <div class="d-flex flex-wrap border-top mt-4 pt-3">
+
+                                        <div class="mb-4 mb-lg-0">
+                                            <div class="d-flex flex-wrap align-items-center mb-1">
+                                                <span class="custom-block-span">Dokumen:</span>
+
+                                                <p class="mb-0">Artikel</p>
+                                            </div>
+
+                                            <div class="d-flex flex-wrap align-items-center">
+                                                <span class="custom-block-span">Lokasi:</span>
+
+                                                <p class="mb-0">Lokal</p>
+                                            </div>
+                                        </div>
+
+                                        <div class="d-flex align-items-center ms-lg-auto">
+                                            <a href="event-detail.html" class="btn custom-btn">Baca Selengkapnya</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+
+
+            <section class="contact-section section-padding" id="section_5">
+                <div class="container">
+                    <div class="row">
+
+                        <div class="col-lg-5 col-12">
+                            <form action="#" method="post" class="custom-form contact-form" role="form">
+                                <h2 class="mb-4 pb-2">Hubungi Kami</h2>
+
+                                <div class="row">
+                                    <div class="col-lg-6 col-md-6 col-12">
+                                        <div class="form-floating">
+                                            <input type="text" name="full-name" id="full-name" class="form-control" placeholder="Full Name" required="">
+                                            
+                                            <label for="floatingInput">Nama Lengkap</label>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-lg-6 col-md-6 col-12"> 
+                                        <div class="form-floating">
+                                            <input type="email" name="email" id="email" pattern="[^ @]*@[^ @]*" class="form-control" placeholder="Email address" required="">
+                                            
+                                            <label for="floatingInput">Email</label>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-lg-12 col-12">
+                                        <div class="form-floating">
+                                            <textarea class="form-control" id="message" name="message" placeholder="Tulis pesan di sini!"></textarea>
+                                            
+                                            <label for="floatingTextarea">Pesan</label>
+                                        </div>
+
+                                        <button type="submit" class="form-control">Kirim</button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+
+                        <div class="col-lg-6 col-12">
+                            <div class="contact-info mt-5">
+                                <div class="contact-info-item">
+                                    <div class="contact-info-body">
+                                        <strong>Mojokerto, Jawa Timur</strong>
+
+                                        <p class="mt-2 mb-1">
+                                            <a href="tel: 010-020-0340" class="contact-link">
+                                                0813-3282-5750
+                                            </a>
+                                        </p>
+
+                                        <p class="mb-0">
+                                            <a href="mailto:info@company.com" class="contact-link">
+                                                brantastowing.id@gmail.com
+                                            </a>
+                                        </p>
+                                    </div>
+
+                                    <div class="contact-info-footer">
+                                        <a href="#">Lihat Peta</a>
+                                    </div>
+                                </div>
+
+                                <img src="images/WorldMap.svg" class="img-fluid" alt="">
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer class="site-footer">
+            <div class="container">
+                <div class="row">
+
+                    <div class="col-lg-2 col-12 me-auto mb-5 mb-lg-0">
+                        <a class="navbar-brand d-flex align-items-center" href="index.html">
+                            <img src="images/logo.png" class="navbar-brand-image img-fluid" alt="">
+                            <span class="navbar-brand-text">
+                                Brantas
+                                <small>Makmur Towing</small>
+                            </span>
+                        </a>
+                    </div>
+
+                    <div class="col-lg-8 col-12">
+                        <h5 class="site-footer-title mb-4">Alamat Kantor</h5>
+
+                        <p class="d-flex border-bottom pb-3 mb-3 me-lg-3">
+                            <span>
+                                Perumahan Griya Pungging Asri 1
+                                Blok A.13, Dsn. Ketok RT/RW 05/05, Desa Tunggal Pager,
+                                Kec. Pungging, Kab. Mojokerto, Jawa Timur
+                            </span>
+                        </p>
+                        <br>
+                        <p class="copyright-text">Copyright © 2025 | Brantas Makmur Towing</p>
+                    </div>
+
+                        <div class="col-lg-2 col-12 ms-auto">
+                            <ul class="social-icon mt-lg-5 mt-3 mb-4">
+                                <li class="social-icon-item">
+                                    <a href="#" class="social-icon-link bi-instagram"></a>
+                                </li>
+
+                                <li class="social-icon-item">
+                                    <a href="#" class="social-icon-link bi-whatsapp"></a>
+                                </li>
+                            </ul>
+                            
+                        </div>
+
+                </div>
+            </div>
+
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#81B29A" fill-opacity="1" d="M0,224L34.3,192C68.6,160,137,96,206,90.7C274.3,85,343,139,411,144C480,149,549,107,617,122.7C685.7,139,754,213,823,240C891.4,267,960,245,1029,224C1097.1,203,1166,181,1234,160C1302.9,139,1371,117,1406,106.7L1440,96L1440,320L1405.7,320C1371.4,320,1303,320,1234,320C1165.7,320,1097,320,1029,320C960,320,891,320,823,320C754.3,320,686,320,617,320C548.6,320,480,320,411,320C342.9,320,274,320,206,320C137.1,320,69,320,34,320L0,320Z"></path></svg>
+        </footer>
+
+
+        <!-- JAVASCRIPT FILES -->
+        <script src="js/jquery.min.js"></script>
+        <script src="js/bootstrap.bundle.min.js"></script>
+        <script src="js/jquery.sticky.js"></script>
+        <script src="js/click-scroll.js"></script>
+        <script src="js/animated-headline.js"></script>
+        <script src="js/modernizr.js"></script>
+        <script src="js/custom.js"></script>
+
+    </body>
+</html>

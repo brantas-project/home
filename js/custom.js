@@ -30,4 +30,10 @@
   
   })(window.jQuery);
 
+  //Submit Berlangganan
+  document.getElementById("subscribeForm").addEventListener("submit", function(e) {
+  e.preventDefault(); // cegah submit asli
+  this.style.display = "none"; // sembunyikan form
+  document.getElementById("thanksMessage").style.display = "block"; // tampilkan pesan
+  });
 

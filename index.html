@@ -2,12 +2,18 @@
 <html lang="en">
     <head>
         <meta charset="utf-8">
+
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <meta name="description" content="">
-        <meta name="author" content="">
+        <meta name="description" content="Brantas Makmur Towing menyediakan layanan towing dan derek mobil 24 jam, cepat, aman, dan terpercaya. Tersedia di seluruh Jawa Timur dan sekitarnya.">
 
-        <title>Brantas Makmur Towing</title>
+        <meta name="keywords" content="towing, derek, towing mobil, derek mobil, jasa derek, jasa towing, towing 24 jam, derek 24 jam, brantas makmur, brantas towing">
+
+        <meta name="robots" content="index, follow">
+
+        <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+        
+        <title>Brantas Makmur Towing | Jasa Towing dan Derek 24 Jam</title>
 
         <!-- CSS FILES -->                
         <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -20,7 +26,24 @@
 
         <link href="css/bootstrap-icons.css" rel="stylesheet">
 
-        <link href="css/templatemo-tiya-golf-club.css" rel="stylesheet">
+        <link href="css/custom.css" rel="stylesheet">
+
+        <script type="application/ld+json">
+            {
+              "@context": "https://schema.org",
+              "@type": "LocalBusiness",
+              "name": "Brantas Makmur Towing",
+              "url": "https://brantastowing.id",
+              "telephone": "+62-813-3282-5750",
+              "address": {
+                "@type": "PostalAddress",
+                "addressLocality": "Mojokerto",
+                "addressRegion": "Jawa Timur",
+                "addressCountry": "ID"
+              }
+            }
+        </script>
+            
 
     </head>
     
@@ -30,8 +53,8 @@
 
             <nav class="navbar navbar-expand-lg">                
                 <div class="container">
-                    <a class="navbar-brand d-flex align-items-center" href="index.html">
-                        <img src="images/logo.png" class="navbar-brand-image img-fluid" alt="Tiya Golf Club">
+                    <a class="navbar-brand d-flex align-items-center" href="javascript:void(0)" onclick="window.location.href='index.html'">
+                        <img src="images/logo.png" class="navbar-brand-image img-fluid" alt="logo-brantas-makmur-towing">
                         <span class="navbar-brand-text">
                             Brantas
                             <small>Makmur Towing</small>
@@ -39,7 +62,7 @@
                     </a>
 
                     <div class="d-lg-none ms-auto me-3">
-                        <a class="btn custom-btn custom-border-btn" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" aria-controls="offcanvasExample">Pesan Towing/Derek</a>
+                        <a class="btn custom-btn custom-border-btn" role="button" onclick="var el = new bootstrap.Offcanvas(document.getElementById('offcanvasBMT')); el.show();">Pesan Towing/Derek</a>
                     </div>
     
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -49,46 +72,48 @@
                     <div class="collapse navbar-collapse" id="navbarNav">
                         <ul class="navbar-nav ms-lg-auto">
                             <li class="nav-item">
-                                <a class="nav-link click-scroll" href="#section_1">Beranda</a>
+                                <a class="nav-link click-scroll" href="javascript:void(0)" onclick="document.getElementById('start_home').scrollIntoView({ behavior: 'smooth' });">Beranda</a>
                             </li>
     
                             <li class="nav-item">
-                                <a class="nav-link click-scroll" href="#section_2">Tentang Kami</a>
+                                <a class="nav-link click-scroll" href="javascript:void(0)" onclick="document.getElementById('about').scrollIntoView({ behavior: 'smooth' });">Tentang Kami</a>
                             </li>
 
                             <li class="nav-item">
-                                <a class="nav-link click-scroll" href="#section_3">Jasa</a>
+                                <a class="nav-link click-scroll" href="javascript:void(0)" onclick="document.getElementById('services').scrollIntoView({ behavior: 'smooth' });">Jasa</a>
                             </li>
 
                             <li class="nav-item">
-                                <a class="nav-link click-scroll" href="#section_4">Berita</a>
+                                <a class="nav-link click-scroll" href="javascript:void(0)" onclick="document.getElementById('news').scrollIntoView({ behavior: 'smooth' });">Berita</a>
                             </li>
 
                             <li class="nav-item">
-                                <a class="nav-link click-scroll" href="#section_5">Hubungi Kami</a>
+                                <a class="nav-link click-scroll" href="javascript:void(0)" onclick="document.getElementById('contact_us').scrollIntoView({ behavior: 'smooth' });">Hubungi Kami</a>
                             </li>
 
                             <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle" href="#" id="navbarLightDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">Halaman</a>
+                                <a class="nav-link dropdown-toggle" href="javascript:void(0)" id="navbarLightDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">Halaman</a>
 
                                 <ul class="dropdown-menu dropdown-menu-light" aria-labelledby="navbarLightDropdownMenuLink">
-                                    <li><a class="dropdown-item" href="event-listing.html">Semua Berita</a></li>
+                                    <li><a class="dropdown-item" href="javascript:void(0)" onclick="window.location.href='semua-berita.html'">Semua Berita</a>
+                                    </li>
 
-                                    <li><a class="dropdown-item" href="event-detail.html">Berita Terakhir</a></li>
+                                    <li><a class="dropdown-item" href="javascript:void(0)" onclick="window.location.href='bengkel.html'">Bengkel</a>
+                                    </li>
                                 </ul>
                             </li>
                         </ul>
 
                         <div class="d-none d-lg-block ms-lg-3">
-                            <a class="btn custom-btn custom-border-btn" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" aria-controls="offcanvasExample">Pesan Towing / Derek</a>
+                            <a class="btn custom-btn custom-border-btn" role="button" onclick="var el = new bootstrap.Offcanvas(document.getElementById('offcanvasBMT')); el.show();">Pesan Towing/Derek</a>
                         </div>
                     </div>
                 </div>
             </nav>
 
-            <div class="offcanvas offcanvas-end" data-bs-scroll="true" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">   
+            <div class="offcanvas offcanvas-end" data-bs-scroll="true" tabindex="-1" id="offcanvasBMT" aria-labelledby="offcanvasBMTLabel">   
                 <div class="offcanvas-header">
-                    <h5 class="offcanvas-title text-white me-3" id="offcanvasExampleLabel">Pesan Towing / Derek <i class="bi-truck-flatbed"></i></h5>
+                    <h5 class="offcanvas-title text-white me-3" id="offcanvasBMTLabel">Pesan Towing / Derek <i class="bi-truck-flatbed"></i></h5>
                     <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
                 </div>                 
                 
@@ -105,11 +130,12 @@
                     <!-- Tab Pesan Sekarang -->
                     <div class="tab-pane fade show active" id="pesan-sekarang" role="tabpanel" aria-labelledby="pesan-sekarang-tab">
                         <div class="text-center my-4">
-                            <h4><a href="#" class="social-icon-item bi-whatsapp"> Whatsapp</a></h4>
+                            <h3><a href="javascript:void(0)" onclick="window.open('https://api.whatsapp.com/send?phone=6281332825750', '_blank')" class="social-icon-item bi-whatsapp"> Whatsapp</a>
+                            </h3>
                         </div>
                         <hr>
                         <div class="text-center my-4">
-                            <h4><a href="#" class="social-icon-item bi-telephone"> Pangilan Darurat</a></h4>
+                            <h3><a href="javascript:void(0)" onclick="window.location.href='tel:6281332825750'" class="social-icon-item bi-telephone"> Panggilan Darurat</a></h3>
                         </div>
                     </div>
             
@@ -154,7 +180,7 @@
                                 </div>
                                 <div class="form-check mb-4">
                                     <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                                    <label class="form-check-label" for="flexCheckDefault">Centang jika kendaraan ini akan diasuransikan selama proses towing/derek.</label>
+                                    <label class="form-check-label" for="flexCheckDefault">Centang jika ingin diasuransikan selama proses towing/derek.</label>
                                 </div>
                                 <div class="col-lg-5 col-md-7 col-8 mx-auto">
                                     <button type="submit" class="form-control"><i class="bi-calendar-fill"></i> Buat</button>
@@ -172,7 +198,7 @@
             
             
 
-            <section class="hero-section d-flex justify-content-center align-items-center" id="section_1">
+            <section class="hero-section d-flex justify-content-center align-items-center" id="start_home">
 
                 <div class="section-overlay"></div>
 
@@ -187,16 +213,18 @@
                             <h1 class="cd-headline rotate-1 text-white mb-4 pb-2">
                                 <span>24 Jam</span>
                                 <span class="cd-words-wrapper">
-                                    <b class="is-visible">Tercepat</b>
-                                    <b>Terjangkau</b>
-                                    <b>Berpengalaman</b>
+                                    <b class="is-visible">Tercepat!</b>                                    
+                                    <b>Terjangkau!</b>
+                                    <b>Terdekat!</b>
+                                    <b>Terpercaya!</b>
+                                    <b>Teraman!</b>
                                 </span>
                             </h1>
 
                             <div class="custom-btn-group">
-                                <a href="#section_2" class="btn custom-btn smoothscroll me-3">Pesan Sekarang</a>
+                                <a class="btn custom-btn smoothscroll me-3" role="button" onclick="var el = new bootstrap.Offcanvas(document.getElementById('offcanvasBMT')); el.show();">Pesan Sekarang</a>
 
-                                <a href="#section_3" class="link smoothscroll">Towing / Derek</a>
+                                <a href="javascript:void(0)" class="link smoothscroll" onclick="document.getElementById('services').scrollIntoView({ behavior: 'smooth' });">Towing / Derek</a>
                             </div>
                         </div>
 
@@ -213,12 +241,12 @@
             </section>
 
 
-            <section class="about-section section-padding" id="section_2">
+            <section class="about-section section-padding" id="about">
                 <div class="container">
                     <div class="row">
 
                         <div class="col-lg-12 col-12 text-center">
-                            <h2 class="mb-lg-5 mb-4">Tentang Brantas Makmur Towing</h2>
+                            <h2 class="mb-lg-5 mb-4"><span class="bi-people-fill"> Tentang</span><br>Brantas Makmur Towing</h2>
                         </div>
 
                         <div class="col-lg-5 col-12 me-auto mb-4 mb-lg-0">
@@ -233,67 +261,45 @@
                             </p>
                         </div>
 
-                        <div class="col-lg-2 col-md-6 col-12 mb-4 mb-lg-0 mb-md-0">
+                        <div class="col-lg-3 col-md-6 col-12 mb-4 mb-lg-0 mb-md-0">
                             <div class="member-block">
                                 <div class="member-block-image-wrap">
                                     <img src="images/members/nomor-satu.png" class="member-block-image img-fluid" alt="H 8591 FG">
 
                                     <ul class="social-icon">
                                         <li class="social-icon-item">
-                                            <a href="#" class="social-icon-link bi-whatsapp"></a>
+                                            <a href="javascript:void(0)" onclick="window.open('https://api.whatsapp.com/send?phone=6281332825750&text=Order%20Towing%20Nomor%201', '_blank')" class="social-icon-link bi-whatsapp"></a>
                                         </li>
                                     </ul>
                                 </div>
 
                                 <div class="member-block-info d-flex align-items-center">
-                                    <h4>Towing</h4>
+                                    <h5>Status</h5>
 
-                                    <p class="ms-auto">tersedia</p>
+                                    <p class="ms-auto">Otw Bondowoso</p>
                                 </div>
                             </div>
                         </div>
 
-                        <div class="col-lg-2 col-md-6 col-12">
+                        <div class="col-lg-3 col-md-6 col-12">
                             <div class="member-block">
                                 <div class="member-block-image-wrap">
                                     <img src="images/members/nomor-dua.png" class="member-block-image img-fluid" alt="B 9244 TIA">
 
                                     <ul class="social-icon">                                        
                                         <li class="social-icon-item">
-                                            <a href="#" class="social-icon-link bi-whatsapp"></a>
+                                            <a href="javascript:void(0)" onclick="window.open('https://api.whatsapp.com/send?phone=6281332825750&text=Order%20Towing%20Nomor%202', '_blank')" class="social-icon-link bi-whatsapp"></a>
                                         </li>
                                     </ul>
                                 </div>
 
                                 <div class="member-block-info d-flex align-items-center">
-                                    <h4>Towing</h4>
+                                    <h5>Status</h5>
 
-                                    <p class="ms-auto">tersedia</p>
+                                    <p class="ms-auto">Otw Malang</p>
                                 </div>
                             </div>
                         </div>
-
-                        <div class="col-lg-2 col-md-6 col-12">
-                            <div class="member-block">
-                                <div class="member-block-image-wrap">
-                                    <img src="images/members/nomor-tiga.png" class="member-block-image img-fluid" alt="">
-
-                                    <ul class="social-icon">
-                                        <li class="social-icon-item">
-                                            <a href="#" class="social-icon-link bi-whatsapp"></a>
-                                        </li>
-                                    </ul>
-                                </div>
-
-                                <div class="member-block-info d-flex align-items-center">
-                                    <h4>Derek</h4>
-
-                                    <p class="ms-auto">tersedia</p>
-                                </div>
-                            </div>
-                        </div>
-                        
-
                     </div>
                 </div>
             </section>
@@ -310,18 +316,21 @@
                                 <h2 class="mb-lg-3">Tetap Terhubung dengan Informasi Terbaru!</h2>
 
                                 <p>
-                                    Berlanggananlah untuk mendapatkan pembaruan terkini seputar layanan kami, penawaran spesial, serta informasi penting lainnya yang dapat mendukung kebutuhan Anda. Jadilah yang pertama mengetahui setiap inovasi dari kami langsung di email Anda.
+                                    Berlanggananlah untuk mendapatkan pembaruan terkini seputar layanan Brantas Makmur Towing, penawaran spesial, serta informasi penting lainnya yang dapat mendukung kebutuhan Anda. Jadilah yang pertama mengetahui setiap inovasi dari kami langsung di email Anda.
                                 </p>
 
-                                <form action="#" method="get" class="custom-form mt-lg-4 mt-2" role="form">
+                                <form id="subscribeForm" action="#" method="get" class="custom-form mt-lg-4 mt-2" role="form">
                                     <div class="input-group input-group-lg">
-                                        <span class="input-group-text bi-envelope" id="basic-addon1"></span>
-
-                                        <input type="email" name="email" id="email" pattern="[^ @]*@[^ @]*" class="form-control" placeholder="Email" required="">
-
-                                        <button type="submit" class="form-control">Berlangganan</button>
+                                      <span class="input-group-text bi-envelope" id="basic-addon1"></span>
+                                  
+                                      <input type="email" name="email" id="email" pattern="[^ @]*@[^ @]*" class="form-control" placeholder="Email" required>
+                                  
+                                      <button type="submit" class="form-control">Berlangganan</button>
                                     </div>
-                                </form>
+                                </form>                                  
+                                <div id="thanksMessage" class="mt-3" style="display: none; font-weight: bold; color: green;">
+                                <hr>Terima Kasih Telah Berlangganan!<hr>
+                                </div>
                             </div>
                         </div>
 
@@ -332,7 +341,7 @@
             </section>
 
 
-            <section class="membership-section section-padding" id="section_3">
+            <section class="membership-section section-padding" id="services">
                 <div class="container">
                     <div class="row">
 
@@ -355,46 +364,51 @@
                                     <tbody>
                                         <tr>
                                             <th scope="row" class="text-start">Pengemudi Berpengalaman & Handal</th>
-                                            <td>
-                                                <i class="bi-check-circle-fill"></i>
-                                            </td>
+                                            <td><i class="bi-check-circle-fill"></i></td>
                                         </tr>
-                        
+                                    
                                         <tr>
                                             <th scope="row" class="text-start">Layanan 24/7 Siap Siaga</th>
-                                            <td>
-                                                <i class="bi-check-circle-fill"></i>
-                                            </td>
+                                            <td><i class="bi-check-circle-fill"></i></td>
                                         </tr>
-                        
+                                    
                                         <tr>
                                             <th scope="row" class="text-start">Pelacakan GPS Real-Time</th>
-                                            <td>
-                                                <i class="bi-check-circle-fill"></i>
-                                            </td>
+                                            <td><i class="bi-check-circle-fill"></i></td>
                                         </tr>
-                        
+                                    
                                         <tr>
                                             <th scope="row" class="text-start">Peralatan Derek Modern & Terawat</th>
-                                            <td>
-                                                <i class="bi-check-circle-fill"></i>
-                                            </td>
+                                            <td><i class="bi-check-circle-fill"></i></td>
                                         </tr>
-                        
+                                    
                                         <tr>
                                             <th scope="row" class="text-start">Harga Transparan & Tanpa Biaya Tersembunyi</th>
-                                            <td>
-                                                <i class="bi-check-circle-fill"></i>
-                                            </td>
+                                            <td><i class="bi-check-circle-fill"></i></td>
                                         </tr>
-                                        
+                                    
                                         <tr>
                                             <th scope="row" class="text-start">Pembayaran Digital & Transaksi Tunai</th>
-                                            <td>
-                                                <i class="bi-check-circle-fill"></i>
-                                            </td>
+                                            <td><i class="bi-check-circle-fill"></i></td>
+                                        </tr>
+                                    
+                                        <!-- Tambahan baru -->
+                                        <tr>
+                                            <th scope="row" class="text-start">Respons Cepat & Penanganan Darurat</th>
+                                            <td><i class="bi-check-circle-fill"></i></td>
+                                        </tr>
+                                    
+                                        <tr>
+                                            <th scope="row" class="text-start">Layanan Wilayah Luas</th>
+                                            <td><i class="bi-check-circle-fill"></i></td>
+                                        </tr>
+                                    
+                                        <tr>
+                                            <th scope="row" class="text-start">Tim Ramah & Profesional</th>
+                                            <td><i class="bi-check-circle-fill"></i></td>
                                         </tr>
                                     </tbody>
+                                    
                                 </table>
                             </div>
                         </div>
@@ -450,8 +464,7 @@
                                         <label class="form-check-label text-white ms-1" for="flexCheckDefault">
                                             Asuransikan selama proses towing/derek.
                                         </label>
-                                    </div>
-                                    
+                                    </div>                                   
                                     
 
                                     <button type="submit" class="form-control"><i class="bi-calendar-fill"></i> Buat</button>
@@ -464,18 +477,18 @@
             </section>
 
 
-            <section class="events-section section-bg section-padding" id="section_4">
+            <section class="events-section section-bg section-padding" id="news">
                 <div class="container">
                     <div class="row">
 
                         <div class="col-lg-12 col-12">
-                            <h2 class="mb-lg-3">Berita</h2>
+                            <h2 class="mb-lg-3">Berita Terbaru</h2>
                         </div>
 
                         <div class="row custom-block mb-3">
                             <div class="col-lg-2 col-md-4 col-12 order-2 order-md-0 order-lg-0">
                                 <div class="custom-block-date-wrap d-flex d-lg-block d-md-block align-items-center mt-3 mt-lg-0 mt-md-0">
-                                    <h6 class="custom-block-date mb-lg-1 mb-0 me-3 me-lg-0 me-md-0">21</h6>
+                                    <h6 class="custom-block-date mb-lg-1 mb-0 me-3 me-lg-0 me-md-0">22</h6>
                                     
                                     <strong class="text-white">April 2025</strong>
                                 </div>
@@ -483,8 +496,8 @@
 
                             <div class="col-lg-4 col-md-8 col-12 order-1 order-lg-0">
                                 <div class="custom-block-image-wrap">
-                                    <a href="event-detail.html">
-                                        <img src="images/professional-golf-player.png" class="custom-block-image img-fluid" alt="">
+                                    <a href="#">
+                                        <img src="images/img-subscribe.jpg" class="custom-block-image img-fluid" alt="subscriber">
 
                                         <i class="custom-block-icon bi-link"></i>
                                     </a>
@@ -493,10 +506,12 @@
 
                             <div class="col-lg-6 col-12 order-3 order-lg-0">
                                 <div class="custom-block-info mt-2 mt-lg-0">
-                                    <a href="event-detail.html" class="events-title mb-3">Jasa Towing Brantas – Antar Kendaraan Aman di Hari Kartini</a>
+                                    <a href="#" class="events-title mb-3">Butuh Mobil Towing / Derek di Jember? Hubungi Kami!</a>
 
                                     <p class="mb-0">
-                                        Setiap tanggal 21 April, bangsa Indonesia memperingati Hari Kartini. Hari ini adalah momen penting untuk mengenang Raden Adjeng Kartini, sosok perempuan hebat yang membuka jalan bagi kemajuan perempuan Indonesia. Ia memperjuangkan hak perempuan untuk mendapatkan pendidikan, kesempatan, dan kesetaraan. Semangat Kartini tidak hanya hidup dalam buku sejarah, tapi juga menginspirasi berbagai bidang, termasuk dunia usaha dan pelayanan jasa.
+                                        Apakah Anda sedang mencari mobil towing atau jasa derek terpercaya di Jember? Kami hadir memberikan solusi cepat dan profesional untuk berbagai kebutuhan pengangkutan kendaraan – mulai dari mobil mogok, kecelakaan, pengantaran mobil showroom, hingga pengawalan kendaraan touring.
+                                        <br><br>
+                                        Kini, armada kami sedang aktif beroperasi dari Mojokerto menuju Jember, membawa kendaraan yang membutuhkan pengangkutan di jalan. Ini menjadi bagian dari komitmen kami untuk terus memperluas jangkauan layanan hingga ke kota-kota strategis di Jawa Timur, termasuk Jember.
                                     </p>
 
                                     <div class="d-flex flex-wrap border-top mt-4 pt-3">
@@ -505,18 +520,18 @@
                                             <div class="d-flex flex-wrap align-items-center mb-1">
                                                 <span class="custom-block-span">Dokumen:</span>
 
-                                                <p class="mb-0">Artikel</p>
+                                                <p class="mb-0">Pelayanan</p>
                                             </div>
 
                                             <div class="d-flex flex-wrap align-items-center">
                                                 <span class="custom-block-span">Lokasi:</span>
 
-                                                <p class="mb-0">Lokal</p>
+                                                <p class="mb-0">Mojokerto - Jember</p>
                                             </div>
                                         </div>
 
                                         <div class="d-flex align-items-center ms-lg-auto">
-                                            <a href="event-detail.html" class="btn custom-btn">Baca Selengkapnya</a>
+                                            <a href="#" class="btn custom-btn">Baca Selengkapnya</a>
                                         </div>
                                     </div>
                                 </div>
@@ -534,8 +549,8 @@
 
                             <div class="col-lg-4 col-md-8 col-12 order-1 order-lg-0">
                                 <div class="custom-block-image-wrap">
-                                    <a href="event-detail.html">
-                                        <img src="images/professional-golf-player.png" class="custom-block-image img-fluid" alt="">
+                                    <a href="#">
+                                        <img src="images/professional-golf-player.png" class="custom-block-image img-fluid" alt="profesional-player">
 
                                         <i class="custom-block-icon bi-link"></i>
                                     </a>
@@ -544,7 +559,7 @@
 
                             <div class="col-lg-6 col-12 order-3 order-lg-0">
                                 <div class="custom-block-info mt-2 mt-lg-0">
-                                    <a href="event-detail.html" class="events-title mb-3">Jasa Towing Brantas – Antar Kendaraan Aman di Hari Kartini</a>
+                                    <a href="#" class="events-title mb-3">Jasa Towing Brantas – Antar Kendaraan Aman di Hari Kartini</a>
 
                                     <p class="mb-0">
                                         Setiap tanggal 21 April, bangsa Indonesia memperingati Hari Kartini. Hari ini adalah momen penting untuk mengenang Raden Adjeng Kartini, sosok perempuan hebat yang membuka jalan bagi kemajuan perempuan Indonesia. Ia memperjuangkan hak perempuan untuk mendapatkan pendidikan, kesempatan, dan kesetaraan. Semangat Kartini tidak hanya hidup dalam buku sejarah, tapi juga menginspirasi berbagai bidang, termasuk dunia usaha dan pelayanan jasa.
@@ -567,7 +582,7 @@
                                         </div>
 
                                         <div class="d-flex align-items-center ms-lg-auto">
-                                            <a href="event-detail.html" class="btn custom-btn">Baca Selengkapnya</a>
+                                            <a href="#l" class="btn custom-btn">Baca Selengkapnya</a>
                                         </div>
                                     </div>
                                 </div>
@@ -579,7 +594,7 @@
             </section>
 
 
-            <section class="contact-section section-padding" id="section_5">
+            <section class="contact-section section-padding" id="contact_us">
                 <div class="container">
                     <div class="row">
 
@@ -590,7 +605,7 @@
                                 <div class="row">
                                     <div class="col-lg-6 col-md-6 col-12">
                                         <div class="form-floating">
-                                            <input type="text" name="full-name" id="full-name" class="form-control" placeholder="Full Name" required="">
+                                            <input type="text" name="nama-lengkap" id="nama-lengkap" class="form-control" placeholder="Nama Lengkap" required="">
                                             
                                             <label for="floatingInput">Nama Lengkap</label>
                                         </div>
@@ -598,7 +613,7 @@
 
                                     <div class="col-lg-6 col-md-6 col-12"> 
                                         <div class="form-floating">
-                                            <input type="email" name="email" id="email" pattern="[^ @]*@[^ @]*" class="form-control" placeholder="Email address" required="">
+                                            <input type="email" name="email" id="email" pattern="[^ @]*@[^ @]*" class="form-control" placeholder="Email" required="">
                                             
                                             <label for="floatingInput">Email</label>
                                         </div>
@@ -624,20 +639,20 @@
                                         <strong>Mojokerto, Jawa Timur</strong>
 
                                         <p class="mt-2 mb-1">
-                                            <a href="tel: 010-020-0340" class="contact-link">
+                                            <a href="javascript:void(0)" class="contact-link" onclick="window.location.href='tel:6281332825750'">
                                                 0813-3282-5750
-                                            </a>
+                                              </a>                                              
                                         </p>
 
                                         <p class="mb-0">
-                                            <a href="mailto:info@company.com" class="contact-link">
+                                            <a href="javascript:void(0)" class="contact-link" onclick="window.location.href='mailto:brantastowing.id@gmail.com'">
                                                 brantastowing.id@gmail.com
-                                            </a>
+                                              </a>                                              
                                         </p>
                                     </div>
 
                                     <div class="contact-info-footer">
-                                        <a href="#">Lihat Peta</a>
+                                        <a href="javascript:void(0)" onclick="window.location.href='#'">Lihat Peta</a>
                                     </div>
                                 </div>
 
@@ -655,8 +670,8 @@
                 <div class="row">
 
                     <div class="col-lg-2 col-12 me-auto mb-5 mb-lg-0">
-                        <a class="navbar-brand d-flex align-items-center" href="index.html">
-                            <img src="images/logo.png" class="navbar-brand-image img-fluid" alt="">
+                        <a class="navbar-brand d-flex align-items-center" href="javascript:void(0)" onclick="window.location.href='index.html'">
+                            <img src="images/logo.png" class="navbar-brand-image img-fluid" alt="logo-brantas-makmur-towing">
                             <span class="navbar-brand-text">
                                 Brantas
                                 <small>Makmur Towing</small>
@@ -681,12 +696,15 @@
                         <div class="col-lg-2 col-12 ms-auto">
                             <ul class="social-icon mt-lg-5 mt-3 mb-4">
                                 <li class="social-icon-item">
-                                    <a href="#" class="social-icon-link bi-instagram"></a>
-                                </li>
-
-                                <li class="social-icon-item">
-                                    <a href="#" class="social-icon-link bi-whatsapp"></a>
-                                </li>
+                                    <a href="javascript:void(0)" class="social-icon-link bi-instagram"
+                                       onclick="window.open('https://www.instagram.com/brantasmakmur.towing', '_blank')"></a>
+                                  </li>
+                                  
+                                  <li class="social-icon-item">
+                                    <a href="javascript:void(0)" class="social-icon-link bi-whatsapp"
+                                       onclick="window.open('https://api.whatsapp.com/send?phone=6281332825750', '_blank')"></a>
+                                  </li>
+                                  
                             </ul>
                             
                         </div>

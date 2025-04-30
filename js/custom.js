@@ -37,3 +37,13 @@
   document.getElementById("thanksMessage").style.display = "block"; // tampilkan pesan
   });
 
+  //Api - Lokasi
+  fetch('api/lokasi.json')
+    .then(response => response.json())
+    .then(data => {
+      document.getElementById('lokasi-t01').textContent = data["lokasi-t01"];
+      document.getElementById('lokasi-t02').textContent = data["lokasi-t02"];
+    })
+    .catch(error => {
+      console.error('Gagal mengambil data lokasi:', error);
+    });

@@ -141,52 +141,60 @@
             
                     <!-- Tab Pesan Terjadwal -->
                     <div class="tab-pane fade" id="pesan-terjadwal" role="tabpanel" aria-labelledby="pesan-terjadwal-tab">
-                        <form class="custom-form member-login-form mt-4" action="#" method="post" role="form">
-                            <div class="customer-schedule-order">
-                                <div class="mb-4">
-                                    <label class="form-label mb-2" for="nama-lengkap">Nama Lengkap</label>
-                                    <input type="text" name="nama-lengkap" id="nama-lengkap" class="form-control" placeholder="Nama Lengkap" required>
-                                </div>
-                                <div class="mb-4">
-                                    <label class="form-label mb-2" for="nomor-kontak">Telepon / Whatsapp</label>
-                                    <input type="text" name="nomor-kontak" id="nomor-kontak" class="form-control" placeholder="Nomor Telepon / Whatsapp" required>
-                                </div>
-                                <div class="mb-4">
-                                    <label class="form-label mb-2 d-block">Jenis Muatan</label>
-                                    <div class="form-check form-check-inline">
-                                        <input class="form-check-input" type="radio" name="jenis-muatan" id="muatan-mobil" value="Mobil" required>
-                                        <label class="form-check-label" for="muatan-mobil">Mobil</label>
-                                    </div>
-                                    <div class="form-check form-check-inline">
-                                        <input class="form-check-input" type="radio" name="jenis-muatan" id="muatan-motor" value="Motor">
-                                        <label class="form-check-label" for="muatan-motor">Motor</label>
-                                    </div>
-                                    <div class="form-check form-check-inline">
-                                        <input class="form-check-input" type="radio" name="jenis-muatan" id="muatan-lainnya" value="Lainnya">
-                                        <label class="form-check-label" for="muatan-lainnya">Lainnya</label>
-                                    </div>
-                                </div>                                
-                                <div class="mb-4">
-                                    <label class="form-label mb-2" for="lokasi-muat">Lokasi Muat</label>
-                                    <input type="text" name="lokasi-muat" id="lokasi-muat" class="form-control" placeholder="Lokasi Muat" required>
-                                </div>
-                                <div class="mb-4">
-                                    <label class="form-label mb-2" for="alamat-tujuan">Alamat Tujuan</label>
-                                    <input type="text" name="alamat-tujuan" id="alamat-tujuan" class="form-control" placeholder="Alamat Tujuan" required>
-                                </div>
-                                <div class="mb-4">
-                                    <label class="form-label mb-2" for="tanggal-muat">Tanggal Muat</label>
-                                    <input type="date" name="tanggal-muat" id="tanggal-muat" class="form-control" placeholder="Tanggal Muat" required>
-                                </div>
-                                <div class="form-check mb-4">
-                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                                    <label class="form-check-label" for="flexCheckDefault">Centang jika ingin diasuransikan selama proses towing/derek.</label>
-                                </div>
-                                <div class="col-lg-5 col-md-7 col-8 mx-auto">
-                                    <button type="submit" class="form-control"><i class="bi-calendar-fill"></i> Buat</button>
-                                </div>
+                        <!-- FORM PEMESANAN JADWAL -->
+                    <form id="scheduleFormPage2" class="custom-form member-login-form mt-4" action="#" method="post" role="form">
+                        <div class="customer-schedule-order">
+                            <div class="mb-4">
+                                <label class="form-label mb-2" for="nama-lengkap-2">Nama Lengkap</label>
+                                <input type="text" name="nama-lengkap" id="nama-lengkap-2" class="form-control" placeholder="Nama Lengkap" required>
                             </div>
-                        </form>
+                            <div class="mb-4">
+                                <label class="form-label mb-2" for="nomor-kontak-2">Telepon / Whatsapp</label>
+                                <input type="text" name="nomor-kontak" id="nomor-kontak-2" class="form-control" placeholder="Nomor Telepon / Whatsapp" required>
+                            </div>
+                            <div class="mb-4">
+                                <label class="form-label mb-2 d-block">Jenis Muatan</label>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="jenis-muatan-2" id="muatan-mobil-2" value="Mobil" required>
+                                    <label class="form-check-label" for="muatan-mobil-2">Mobil</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="jenis-muatan-2" id="muatan-motor-2" value="Motor">
+                                    <label class="form-check-label" for="muatan-motor-2">Motor</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="jenis-muatan-2" id="muatan-lainnya-2" value="Lainnya">
+                                    <label class="form-check-label" for="muatan-lainnya-2">Lainnya</label>
+                                </div>
+                            </div>                                
+                            <div class="mb-4">
+                                <label class="form-label mb-2" for="lokasi-muat-2">Lokasi Muat</label>
+                                <input type="text" name="lokasi-muat" id="lokasi-muat-2" class="form-control" placeholder="Lokasi Muat" required>
+                            </div>
+                            <div class="mb-4">
+                                <label class="form-label mb-2" for="alamat-tujuan-2">Alamat Tujuan</label>
+                                <input type="text" name="alamat-tujuan" id="alamat-tujuan-2" class="form-control" placeholder="Alamat Tujuan" required>
+                            </div>
+                            <div class="mb-4">
+                                <label class="form-label mb-2" for="tanggal-muat-2">Tanggal Muat</label>
+                                <input type="date" name="tanggal-muat" id="tanggal-muat-2" class="form-control" placeholder="Tanggal Muat" required>
+                            </div>
+                            <div class="form-check mb-4">
+                                <input class="form-check-input" type="checkbox" value="Ya" id="asuransi-2" name="asuransi">
+                                <label class="form-check-label" for="asuransi-2">Centang jika ingin diasuransikan selama proses towing/derek.</label>
+                            </div>
+                            <div class="col-lg-5 col-md-7 col-8 mx-auto">
+                                <button type="submit" class="form-control"><i class="bi-calendar-fill"></i> Buat</button>
+                            </div>
+                        </div>
+                    </form>
+
+                    <!-- PESAN TERIMA KASIH -->
+                    <div id="scheduleThanksPage2" style="display:none; padding: 20px; background-color: #f0f0f0; border-radius: 10px;">
+                        <h4>Terima kasih Anda telah menjadwalkan pengiriman kendaraan Anda.</h4>
+                        <p style="font-weight: bold; color: green;">Kami akan menghubungi Anda segera!</p>
+                    </div>
+
                     </div>
                 </div>
             
@@ -318,18 +326,19 @@
                                     Berlanggananlah untuk mendapatkan pembaruan terkini seputar layanan Brantas Makmur Towing, penawaran spesial, serta informasi penting lainnya yang dapat mendukung kebutuhan Anda. Jadilah yang pertama mengetahui setiap inovasi dari kami langsung di email Anda.
                                 </p>
 
-                                <form id="subscribeForm" action="#" method="get" class="custom-form mt-lg-4 mt-2" role="form">
+                                <form id="subscribeForm" class="custom-form mt-lg-4 mt-2" role="form">
                                     <div class="input-group input-group-lg">
                                       <span class="input-group-text bi-envelope" id="basic-addon1"></span>
                                   
-                                      <input type="email" name="email" id="email" pattern="[^ @]*@[^ @]*" class="form-control" placeholder="Email" required>
+                                      <input type="email" id="subscribe-email" class="form-control" placeholder="Email" required>
                                   
                                       <button type="submit" class="form-control">Berlangganan</button>
                                     </div>
-                                </form>                                  
-                                <div id="thanksMessage" class="mt-3" style="display: none; font-weight: bold; color: green;">
-                                <hr>Terima Kasih Telah Berlangganan!<hr>
-                                </div>
+                                  </form>
+                                  
+                                  <div id="subscribeThanks" class="mt-3" style="display: none; font-weight: bold; color: green;">
+                                    <hr>Terima Kasih Telah Berlangganan!<hr>
+                                  </div>
                             </div>
                         </div>
 
@@ -415,60 +424,57 @@
 
                         <div class="col-lg-5 col-12 mx-auto">
                         <h4 class="mb-4 pb-lg-2">Tentukan Jadwal</h4>
-                            <form action="#" method="post" class="custom-form membership-form shadow-lg" role="form">
-                                <!-- <h4 class="text-white mb-4">Pemesanan Terjadwal</h4> -->
-
-                                    <div class="form-floating">
-                                        <input type="text" name="nama-lengkap" id="nama-lengkap" class="form-control" placeholder="Nama Lengkap" required="">
-                                        
-                                        <label for="floatingInput"> Nama Lengkap</label>
-                                    </div>
-
-                                    <div class="form-floating">
-                                        <input type="text" name="telepon-whatsapp" id="telepon-whatsapp" class="form-control" placeholder="Telepon / Whatsapp" required="">
-                                        
-                                        <label for="floatingInput"> Telepon / Whatsapp</label>
-                                    </div>
-                                    
-                                    <div class="form-floating mb-4">
-                                        <select class="form-control" id="jenis-muatan" name="jenis-muatan" required>
-                                            <option value="" disabled selected>Pilih jenis muatan</option>
-                                            <option value="Mobil">Mobil</option>
-                                            <option value="Motor">Motor</option>
-                                            <option value="Lainnya">Lainnya</option>
-                                        </select>
-                                        <label for="jenis-muatan">Jenis Muatan</label>
-                                    </div>                                    
-
-                                    <div class="form-floating">
-                                        <textarea class="form-control" id="lokasi-muat" name="lokasi-muat" placeholder="Alamat Muat"></textarea>
-                                        
-                                        <label for="floatingTextarea"> Lokasi Muat</label>
-                                    </div>
-
-                                    <div class="form-floating">
-                                        <textarea class="form-control" id="alamat-tujuan" name="alamat-tujuan" placeholder="Alamat Tujuan"></textarea>
-                                        
-                                        <label for="floatingTextarea"> Alamat Tujuan</label>
-                                    </div>
-
-                                    <div class="form-floating">
-                                        <input type="date" name="tanggal-muat" id="tanggal-muat" class="form-control" placeholder="Tanggal Muat" required="">
-                                        
-                                        <label for="floatingInput"> Tanggal Muat</label>
-                                    </div>
-
-                                    <div class="form-check mb-4 d-flex">
-                                        <input class="form-check-label" type="checkbox" value="" id="flexCheckDefault">
-                                        <label class="form-check-label text-white ms-1" for="flexCheckDefault">
-                                            Asuransikan selama proses towing/derek.
-                                        </label>
-                                    </div>                                   
-                                    
-
-                                    <button type="submit" class="form-control"><i class="bi-calendar-fill"></i> Buat</button>
-                                </div>
-                            </form>
+                        <form id="jadwalForm" class="custom-form membership-form shadow-lg" role="form">
+                            <div class="form-floating">
+                              <input type="text" id="jadwal-nama" class="form-control" placeholder="Nama Lengkap" required>
+                              <label>Nama Lengkap</label>
+                            </div>
+                          
+                            <div class="form-floating">
+                              <input type="text" id="jadwal-telepon" class="form-control" placeholder="Telepon / Whatsapp" required>
+                              <label>Telepon / Whatsapp</label>
+                            </div>
+                          
+                            <div class="form-floating mb-4">
+                              <select class="form-control" id="jadwal-muatan" required>
+                                <option value="" disabled selected>Pilih jenis muatan</option>
+                                <option value="Mobil">Mobil</option>
+                                <option value="Motor">Motor</option>
+                                <option value="Lainnya">Lainnya</option>
+                              </select>
+                              <label>Jenis Muatan</label>
+                            </div>
+                          
+                            <div class="form-floating">
+                              <textarea class="form-control" id="jadwal-lokasi-muat" placeholder="Alamat Muat"></textarea>
+                              <label>Lokasi Muat</label>
+                            </div>
+                          
+                            <div class="form-floating">
+                              <textarea class="form-control" id="jadwal-alamat-tujuan" placeholder="Alamat Tujuan"></textarea>
+                              <label>Alamat Tujuan</label>
+                            </div>
+                          
+                            <div class="form-floating">
+                              <input type="date" id="jadwal-tanggal" class="form-control" placeholder="Tanggal Muat" required>
+                              <label>Tanggal Muat</label>
+                            </div>
+                          
+                            <div class="form-check mb-4 d-flex">
+                              <input class="form-check-input" type="checkbox" id="jadwal-asuransi">
+                              <label class="form-check-label text-white ms-1" for="jadwal-asuransi">
+                                Asuransikan selama proses towing/derek.
+                              </label>
+                            </div>
+                          
+                            <button type="submit" class="form-control"><i class="bi-calendar-fill"></i> Buat</button>
+                          </form>
+                          
+                          <div id="jadwalThanks" style="display: none; padding: 20px; background-color: #f0f0f0; border-radius: 10px;">
+                            <h4>Terima kasih Anda telah menjadwalkan pengiriman kendaraan Anda.</h4>
+                            <p style="font-weight: bold; color: green;">Kami akan menghubungi Anda segera!</p>
+                          </div>
+                          
                         </div>
 
                     </div>
@@ -598,37 +604,39 @@
                     <div class="row">
 
                         <div class="col-lg-5 col-12">
-                            <form action="#" method="post" class="custom-form contact-form" role="form">
+                            <form id="contactForm" class="custom-form contact-form" role="form">
                                 <h2 class="mb-4 pb-2">Hubungi Kami</h2>
-
+                              
                                 <div class="row">
-                                    <div class="col-lg-6 col-md-6 col-12">
-                                        <div class="form-floating">
-                                            <input type="text" name="nama-lengkap" id="nama-lengkap" class="form-control" placeholder="Nama Lengkap" required="">
-                                            
-                                            <label for="floatingInput">Nama Lengkap</label>
-                                        </div>
+                                  <div class="col-lg-6 col-md-6 col-12">
+                                    <div class="form-floating">
+                                      <input type="text" id="kontak-nama" class="form-control" placeholder="Nama Lengkap" required>
+                                      <label for="nama-lengkap">Nama Lengkap</label>
                                     </div>
-
-                                    <div class="col-lg-6 col-md-6 col-12"> 
-                                        <div class="form-floating">
-                                            <input type="email" name="email" id="email" pattern="[^ @]*@[^ @]*" class="form-control" placeholder="Email" required="">
-                                            
-                                            <label for="floatingInput">Email</label>
-                                        </div>
+                                  </div>
+                              
+                                  <div class="col-lg-6 col-md-6 col-12">
+                                    <div class="form-floating">
+                                      <input type="email" id="kontak-email" class="form-control" placeholder="Email" required>
+                                      <label for="email">Email</label>
                                     </div>
-
-                                    <div class="col-lg-12 col-12">
-                                        <div class="form-floating">
-                                            <textarea class="form-control" id="message" name="message" placeholder="Tulis pesan di sini!"></textarea>
-                                            
-                                            <label for="floatingTextarea">Pesan</label>
-                                        </div>
-
-                                        <button type="submit" class="form-control">Kirim</button>
+                                  </div>
+                              
+                                  <div class="col-lg-12 col-12">
+                                    <div class="form-floating">
+                                      <textarea id="kontak-pesan" class="form-control" placeholder="Tulis pesan di sini!" required></textarea>
+                                      <label for="message">Pesan</label>
                                     </div>
+                              
+                                    <button type="submit" class="form-control">Kirim</button>
+                                  </div>
                                 </div>
                             </form>
+                              
+                              <div id="thanksMessage" style="display:none; padding: 20px; background-color: #f0f0f0; border-radius: 10px;">
+                                <h4>Terima kasih telah menghubungi kami!</h4>
+                                <p style="font-weight: bold; color: green;">Kami akan segera menanggapi pesan Anda.</p>
+                              </div>
                         </div>
 
                         <div class="col-lg-6 col-12">
@@ -651,11 +659,11 @@
                                     </div>
 
                                     <div class="contact-info-footer">
-                                        <a href="javascript:void(0)" onclick="window.location.href='#'">Lihat Peta</a>
+                                        <a href="javascript:void(0)" onclick="window.location.href='https://g.co/kgs/WgA89Xe'">Lihat Peta</a>
                                     </div>
                                 </div>
 
-                                <img src="images/WorldMap.svg" class="img-fluid" alt="">
+                                <img src="images/indonesia.svg" class="img-fluid" alt="peta-indonesia">
                             </div>
                         </div>
 

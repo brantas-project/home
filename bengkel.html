@@ -4,10 +4,62 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <meta name="description" content="">
-        <meta name="author" content="">
+        <meta name="description" content="Daftar bengkel rekanan Brantas Makmur Towing untuk servis mobil terbaik di Sidoarjo, Surabaya, dan Mojokerto. Cek lokasi & layanan lengkapnya!">
 
-        <title>Brantas Makmur Towing</title>
+        <meta property="og:title" content="Bengkel Rekomendasi – Towing & Servis Mobil Terpercaya">
+        <meta property="og:description" content="Cari bengkel terpercaya setelah ditowing? Cek daftar bengkel rekanan Brantas Makmur Towing di Sidoarjo, Surabaya, dan Mojokerto.">
+        <meta property="og:image" content="URL-GAMBAR-BENGKEL.jpg">
+        <meta property="og:url" content="https://www.brantastowing.id/bengkel">
+        <meta property="og:type" content="website">
+
+        <title>Brantas Makmur Towing | Bengkel Rekomendasi – Towing & Servis Mobil Terpercaya</title>
+
+        <script type="application/ld+json">
+            {
+              "@context": "https://schema.org",
+              "@type": "LocalBusiness",
+              "name": "Brantas Makmur Towing",
+              "url": "https://www.brantastowing.id/bengkel",
+              "logo": "https://www.brantastowing.id/images/logo.png",
+              "image": "https://www.brantastowing.id/images/bengkel-illustration.jpg",
+              "description": "Daftar bengkel rekanan Brantas Makmur Towing yang siap membantu perbaikan mobil Anda di Sidoarjo, Surabaya, dan Mojokerto.",
+              "areaServed": {
+                "@type": "Place",
+                "name": ["Sidoarjo", "Surabaya", "Mojokerto"]
+              },
+              "serviceType": "Towing dan Perbaikan Kendaraan",
+              "hasMap": "https://goo.gl/maps/..."
+            }
+        </script>
+        <script>
+            //Components
+            fetch("components/navbar.html")
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById("navbar-placeholder").innerHTML = data;
+            });
+
+            fetch("components/nav-menu.html")
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById("nav-menu-placeholder").innerHTML = data;
+            });
+
+            fetch("components/footer.html")
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById("footer-placeholder").innerHTML = data;
+            });
+
+            function scrollToSection(id) {
+                const section = document.getElementById(id);
+                if (section) {
+                section.scrollIntoView({ behavior: 'smooth' });
+                } else {
+                window.location.href = 'index.html#' + id;
+                }
+            }
+        </script>
 
         <!-- CSS FILES -->                
         <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -28,172 +80,15 @@
 
         <main>
 
-            <nav class="navbar navbar-expand-lg">                
-                <div class="container">
-                    <a class="navbar-brand d-flex align-items-center" href="javascript:void(0)" onclick="window.location.href='index.html'">
-                        <img src="images/logo.png" class="navbar-brand-image img-fluid" alt="logo-brantas-makmur-towing">
-                        <span class="navbar-brand-text">
-                            Brantas
-                            <small>Makmur Towing</small>
-                        </span>
-                    </a>
+            <div id="navbar-placeholder"></div>
 
-                    <div class="d-lg-none ms-auto me-3">
-                        <a class="btn custom-btn custom-border-btn" role="button" onclick="var el = new bootstrap.Offcanvas(document.getElementById('offcanvasBMT')); el.show();">Pesan Towing/Derek</a>
-                    </div>
-    
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-    
-                    <div class="collapse navbar-collapse" id="navbarNav">
-                        <ul class="navbar-nav ms-lg-auto">
-                            <li class="nav-item">
-                                <a class="nav-link click-scroll" href="javascript:void(0)" onclick="document.getElementById('index.html').scrollIntoView({ behavior: 'smooth' });">Beranda</a>
-                            </li>
-    
-                            <li class="nav-item">
-                                <a href="javascript:void(0)" class="nav-link click-scroll" onclick="window.location.href='index.html#about'">Tentang Kami</a>
-                            </li>
-
-                            <li class="nav-item">
-                                <a href="javascript:void(0)" class="nav-link click-scroll" onclick="window.location.href='index.html#services'">Jasa</a>
-                            </li>
-
-                            <li class="nav-item">
-                                <a href="javascript:void(0)" class="nav-link click-scroll" onclick="window.location.href='index.html#news'">Berita</a>
-                            </li>
-
-                            <li class="nav-item">
-                                <a href="javascript:void(0)" class="nav-link click-scroll" onclick="window.location.href='index.html#contact_us'">Hubungi Kami</a>
-                            </li>
-
-                            <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle" href="javascript:void(0)" id="navbarLightDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">Halaman</a>
-
-                                <ul class="dropdown-menu dropdown-menu-light" aria-labelledby="navbarLightDropdownMenuLink">
-                                    <li><a class="dropdown-item" href="javascript:void(0)" onclick="window.location.href='semua-berita.html'">Semua Berita</a>
-                                    </li>
-
-                                    <li><a class="dropdown-item" href="javascript:void(0)" onclick="window.location.href='bengkel.html'">Bengkel</a>
-                                    </li>
-                                </ul>
-                            </li>
-                        </ul>
-
-                        <div class="d-none d-lg-block ms-lg-3">
-                            <a class="btn custom-btn custom-border-btn" role="button" onclick="var el = new bootstrap.Offcanvas(document.getElementById('offcanvasBMT')); el.show();">Pesan Towing/Derek</a>
-                        </div>
-                    </div>
-                </div>
-            </nav>
-
-            <div class="offcanvas offcanvas-end" data-bs-scroll="true" tabindex="-1" id="offcanvasBMT" aria-labelledby="offcanvasBMTLabel">   
-                <div class="offcanvas-header">
-                    <h5 class="offcanvas-title text-white me-3" id="offcanvasBMTLabel">Pesan Towing / Derek <i class="bi-truck-flatbed"></i></h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-                </div>                 
-                
-                <ul class="nav nav-tabs justify-content-center" id="pesanTab" role="tablist">
-                    <li class="nav-item" role="presentation">
-                        <button class="nav-link active" id="pesan-sekarang-tab" data-bs-toggle="tab" data-bs-target="#pesan-sekarang" type="button" role="tab" aria-controls="pesan-sekarang" aria-selected="true">Pesan Sekarang</button>
-                    </li>
-                    <li class="nav-item" role="presentation">
-                        <button class="nav-link" id="pesan-terjadwal-tab" data-bs-toggle="tab" data-bs-target="#pesan-terjadwal" type="button" role="tab" aria-controls="pesan-terjadwal" aria-selected="false">Tentukan Jadwal</button>
-                    </li>
-                </ul>
-            
-                <div class="tab-content offcanvas-body d-flex flex-column" id="pesanTabContent">
-                    <!-- Tab Pesan Sekarang -->
-                    <div class="tab-pane fade show active" id="pesan-sekarang" role="tabpanel" aria-labelledby="pesan-sekarang-tab">
-                        <div class="text-center my-4">
-                            <h3><a href="javascript:void(0)" onclick="window.open('https://api.whatsapp.com/send?phone=6281332825750', '_blank')" class="social-icon-item bi-whatsapp"> Whatsapp</a>
-                            </h3>
-                        </div>
-                        <hr>
-                        <div class="text-center my-4">
-                            <h3><a href="javascript:void(0)" onclick="window.location.href='tel:6281332825750'" class="social-icon-item bi-telephone"> Panggilan Darurat</a></h3>
-                        </div>
-                    </div>
-            
-                    <!-- Tab Pesan Terjadwal -->
-                    <div class="tab-pane fade" id="pesan-terjadwal" role="tabpanel" aria-labelledby="pesan-terjadwal-tab">
-                        <form class="custom-form member-login-form mt-4" action="#" method="post" role="form">
-                            <div class="customer-schedule-order">
-                                <div class="mb-4">
-                                    <label class="form-label mb-2" for="nama-lengkap">Nama Lengkap</label>
-                                    <input type="text" name="nama-lengkap" id="nama-lengkap" class="form-control" placeholder="Nama Lengkap" required>
-                                </div>
-                                <div class="mb-4">
-                                    <label class="form-label mb-2" for="nomor-kontak">Telepon / Whatsapp</label>
-                                    <input type="text" name="nomor-kontak" id="nomor-kontak" class="form-control" placeholder="Nomor Telepon / Whatsapp" required>
-                                </div>
-                                <div class="mb-4">
-                                    <label class="form-label mb-2 d-block">Jenis Muatan</label>
-                                    <div class="form-check form-check-inline">
-                                        <input class="form-check-input" type="radio" name="jenis-muatan" id="muatan-mobil" value="Mobil" required>
-                                        <label class="form-check-label" for="muatan-mobil">Mobil</label>
-                                    </div>
-                                    <div class="form-check form-check-inline">
-                                        <input class="form-check-input" type="radio" name="jenis-muatan" id="muatan-motor" value="Motor">
-                                        <label class="form-check-label" for="muatan-motor">Motor</label>
-                                    </div>
-                                    <div class="form-check form-check-inline">
-                                        <input class="form-check-input" type="radio" name="jenis-muatan" id="muatan-lainnya" value="Lainnya">
-                                        <label class="form-check-label" for="muatan-lainnya">Lainnya</label>
-                                    </div>
-                                </div>                                
-                                <div class="mb-4">
-                                    <label class="form-label mb-2" for="lokasi-muat">Lokasi Muat</label>
-                                    <input type="text" name="lokasi-muat" id="lokasi-muat" class="form-control" placeholder="Lokasi Muat" required>
-                                </div>
-                                <div class="mb-4">
-                                    <label class="form-label mb-2" for="alamat-tujuan">Alamat Tujuan</label>
-                                    <input type="text" name="alamat-tujuan" id="alamat-tujuan" class="form-control" placeholder="Alamat Tujuan" required>
-                                </div>
-                                <div class="mb-4">
-                                    <label class="form-label mb-2" for="tanggal-muat">Tanggal Muat</label>
-                                    <input type="date" name="tanggal-muat" id="tanggal-muat" class="form-control" placeholder="Tanggal Muat" required>
-                                </div>
-                                <div class="form-check mb-4">
-                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                                    <label class="form-check-label" for="flexCheckDefault">Centang jika ingin diasuransikan selama proses towing/derek.</label>
-                                </div>
-                                <div class="col-lg-5 col-md-7 col-8 mx-auto">
-                                    <button type="submit" class="form-control"><i class="bi-calendar-fill"></i> Buat</button>
-                                </div>
-                            </div>
-                        </form>
-                    </div>
-                </div>
-            
-                <div class="mt-auto mb-5">
-                    <hr>
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#3D405B" fill-opacity="1" d="M0,224L34.3,192C68.6,160,137,96,206,90.7C274.3,85,343,139,411,144C480,149,549,107,617,122.7C685.7,139,754,213,823,240C891.4,267,960,245,1029,224C1097.1,203,1166,181,1234,160C1302.9,139,1371,117,1406,106.7L1440,96L1440,320L1405.7,320C1371.4,320,1303,320,1234,320C1165.7,320,1097,320,1029,320C960,320,891,320,823,320C754.3,320,686,320,617,320C548.6,320,480,320,411,320C342.9,320,274,320,206,320C137.1,320,69,320,34,320L0,320Z"></path></svg>
-                </div>
-            </div>
+            <div id="nav-menu-placeholder"></div>
             
 
-            <section class="hero-section hero-50 d-flex justify-content-center align-items-center" id="section_1">
-
-                <div class="section-overlay"></div>
+            <section class="d-flex justify-content-center align-items-center" id="section_1">
 
                 <svg viewBox="0 0 1962 178" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><path fill="#3D405B" d="M 0 114 C 118.5 114 118.5 167 237 167 L 237 167 L 237 0 L 0 0 Z" stroke-width="0"></path> <path fill="#3D405B" d="M 236 167 C 373 167 373 128 510 128 L 510 128 L 510 0 L 236 0 Z" stroke-width="0"></path> <path fill="#3D405B" d="M 509 128 C 607 128 607 153 705 153 L 705 153 L 705 0 L 509 0 Z" stroke-width="0"></path><path fill="#3D405B" d="M 704 153 C 812 153 812 113 920 113 L 920 113 L 920 0 L 704 0 Z" stroke-width="0"></path><path fill="#3D405B" d="M 919 113 C 1048.5 113 1048.5 148 1178 148 L 1178 148 L 1178 0 L 919 0 Z" stroke-width="0"></path><path fill="#3D405B" d="M 1177 148 C 1359.5 148 1359.5 129 1542 129 L 1542 129 L 1542 0 L 1177 0 Z" stroke-width="0"></path><path fill="#3D405B" d="M 1541 129 C 1751.5 129 1751.5 138 1962 138 L 1962 138 L 1962 0 L 1541 0 Z" stroke-width="0"></path></svg>
 
-                <div class="container">
-                    <div class="row">
-
-                        <div class="col-lg-6 col-12">
-
-                            <h1 class="text-white mb-4 pb-2">Event Detail.</h1>
-
-                            <a href="#section_2" class="btn custom-btn smoothscroll me-3">Learn more</a>
-                        </div>
-
-                    </div>
-                </div>
-
-                <svg viewBox="0 0 1962 178" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><path fill="#ffffff" d="M 0 114 C 118.5 114 118.5 167 237 167 L 237 167 L 237 0 L 0 0 Z" stroke-width="0"></path> <path fill="#ffffff" d="M 236 167 C 373 167 373 128 510 128 L 510 128 L 510 0 L 236 0 Z" stroke-width="0"></path> <path fill="#ffffff" d="M 509 128 C 607 128 607 153 705 153 L 705 153 L 705 0 L 509 0 Z" stroke-width="0"></path><path fill="#ffffff" d="M 704 153 C 812 153 812 113 920 113 L 920 113 L 920 0 L 704 0 Z" stroke-width="0"></path><path fill="#ffffff" d="M 919 113 C 1048.5 113 1048.5 148 1178 148 L 1178 148 L 1178 0 L 919 0 Z" stroke-width="0"></path><path fill="#ffffff" d="M 1177 148 C 1359.5 148 1359.5 129 1542 129 L 1542 129 L 1542 0 L 1177 0 Z" stroke-width="0"></path><path fill="#ffffff" d="M 1541 129 C 1751.5 129 1751.5 138 1962 138 L 1962 138 L 1962 0 L 1541 0 Z" stroke-width="0"></path></svg>
             </section>
 
 
@@ -201,71 +96,98 @@
                 <div class="container">
                     <div class="row">
 
-                        <div class="col-lg-6 col-md-8 col-12 mx-auto">
-                            <h2 class="mb-lg-5 mb-4">Tiya Club's Group Tournaments</h2>
-
+                        <div class="col-lg-10 col-md-10 col-12 mx-auto">
+                            <br>
                             <div class="custom-block-image-wrap">
-                                <img src="images/professional-golf-player.jpg" class="custom-block-image img-fluid" alt="">
+                                <img src="images/bengkel.png" class="custom-block-image img-fluid" alt="gambar-bengkel">
                             </div>
-
-                            <div class="custom-block-info">
-                                <h3 class="mb-3">Golf Club based in Orlando</h3>
-
-                                <p>Tiya Golf Club is Bootstrap v5.3.0 HTML CSS template for your golf related websites. Anyone can download, edit and use this layout for commercial purposes.</p>
-
-                            <p>Tiya is 100% free CSS template provided by TemplateMo website. Please tell your friends about our website. Thank you for visiting.</p>
-
-                                <div class="events-detail-info row my-5">
-                                    <div class="col-lg-12 col-12">
-                                        <h4 class="mb-3">Event Detail</h4>
-                                    </div>
-
-                                    <div class="col-lg-4 col-12">
-                                        <span class="custom-block-span">Date:</span>
-
-                                        <p class="mb-0">18 Mar 2048</p>
-                                    </div>
-
-                                    <div class="col-lg-4 col-12 my-3 my-lg-0">
-                                        <span class="custom-block-span">Location:</span>
-
-                                        <p class="mb-0">Tiya Golf Club</p>
-                                    </div>
-
-                                    <div class="col-lg-4 col-12">
-                                        <span class="custom-block-span">Ticket:</span>
-
-                                        <p class="mb-0">$150</p>
-                                    </div>
-                                </div>
-
-                                <div class="contact-info">
-                                    <div class="contact-info-item">
-                                        <div class="contact-info-body">
-                                            <strong>London, United Kingdom</strong>
-
-                                            <p class="mt-2 mb-1">
-                                                <a href="tel: 010-020-0340" class="contact-link">
-                                                    (020) 
-                                                    010-020-0340
-                                                </a>
-                                            </p>
-    
-                                            <p class="mb-0">
-                                                <a href="mailto:info@company.com" class="contact-link">
-                                                    info@company.com
-                                                </a>
-                                            </p>
+                                <hr>
+                                <section class="section-padding section-bg">
+                                    <div class="container">
+                                      <div class="row justify-content-center mb-5">
+                                        <div class="col-lg-10 col-12 text-center">
+                                        <h2 class="mb-lg-5 mb-4">Bengkel Rekomendasi</h2>
+                                          <p>Berikut adalah daftar bengkel rekanan Brantas Makmur Towing yang kami rekomendasikan. Bengkel-bengkel ini siap menangani berbagai jenis perbaikan, mulai dari kerusakan mesin, kecelakaan, hingga kebutuhan servis lainnya.</p>
                                         </div>
-
-                                        <div class="contact-info-footer">
-                                            <a href="#">Directions</a>
+                                      </div>
+                                  
+                                      <!-- Sidoarjo -->
+                                      <div class="row mb-5">
+                                        <div class="col-12">
+                                          <h3 class="mb-4">📍 Sidoarjo</h3>
                                         </div>
+                                  
+                                        <div class="col-md-6 mb-4">
+                                          <div class="custom-block custom-block-bg">
+                                            <h4>Yasmin Motor</h4>
+                                            <p>📍 Jl. Raya Cemengkalang, Cemeng Kalang, Kec. Sidoarjo</p>
+                                          </div>
+                                        </div>
+                                  
+                                        <div class="col-md-6 mb-4">
+                                          <div class="custom-block custom-block-bg">
+                                            <h4>Sars Racing</h4>
+                                            <p>📍 Jl. Lingkar Timur, Prasungtani, Buduran, Kab. Sidoarjo</p>
+                                          </div>
+                                        </div>
+                                      </div>
+                                  
+                                      <!-- Surabaya -->
+                                      <div class="row mb-5">
+                                        <div class="col-12">
+                                          <h3 class="mb-4">📍 Surabaya</h3>
+                                        </div>
+                                  
+                                        <div class="col-md-6 mb-4">
+                                          <div class="custom-block custom-block-bg">
+                                            <h4>Benz Jaya Motor</h4>
+                                            <p>📍 Jl. Dukuh Kupang Barat, Surabaya</p>
+                                          </div>
+                                        </div>
+                                  
+                                        <div class="col-md-6 mb-4">
+                                          <div class="custom-block custom-block-bg">
+                                            <h4>PT. Bumi Jasa Utama</h4>
+                                            <p>📍 Galaxy Bumi Permai Blok N1 No.12, Surabaya</p>
+                                          </div>
+                                        </div>
+                                      </div>
+                                  
+                                      <!-- Mojokerto -->
+                                      <div class="row mb-5">
+                                        <div class="col-12">
+                                          <h3 class="mb-4">📍 Mojokerto</h3>
+                                        </div>
+                                  
+                                        <div class="col-md-4 mb-4">
+                                          <div class="custom-block custom-block-bg">
+                                            <h4>Muji Motor</h4>
+                                            <p>📍 Jl. Raya Jasem – Ngoro, Kab. Mojokerto</p>
+                                          </div>
+                                        </div>
+                                  
+                                        <div class="col-md-4 mb-4">
+                                          <div class="custom-block custom-block-bg">
+                                            <h4>Roni Motor</h4>
+                                            <p>📍 Jl. Suromurukan, Blooto, Kec. Prajurit Kulon, Mojokerto</p>
+                                          </div>
+                                        </div>
+                                  
+                                        <div class="col-md-4 mb-4">
+                                          <div class="custom-block custom-block-bg">
+                                            <h4>PT. Tanindo Intertracto</h4>
+                                            <p>📍 Jl. Raya Surabaya – Mojokerto, Sepanjang</p>
+                                          </div>
+                                        </div>
+                                      </div>
+                                  
+                                      <div class="row">
+                                        <div class="col-12 text-center">
+                                          <p>Ingin diarahkan ke bengkel terdekat sesuai kondisi kendaraan Anda? Hubungi kami kapan saja. Kami siap bantu!</p>
+                                        </div>
+                                      </div>
                                     </div>
-
-                                    <img src="images/WorldMap.svg" class="img-fluid" alt="">
-                                </div>
-                            </div>
+                                </section>
                         </div>
 
                     </div>
@@ -274,53 +196,7 @@
         </main>
 
         <footer class="site-footer">
-            <div class="container">
-                <div class="row">
-
-                    <div class="col-lg-2 col-12 me-auto mb-5 mb-lg-0">
-                        <a class="navbar-brand d-flex align-items-center" href="javascript:void(0)" onclick="window.location.href='index.html'">
-                            <img src="images/logo.png" class="navbar-brand-image img-fluid" alt="logo-brantas-makmur-towing">
-                            <span class="navbar-brand-text">
-                                Brantas
-                                <small>Makmur Towing</small>
-                            </span>
-                        </a>
-                    </div>
-
-                    <div class="col-lg-8 col-12">
-                        <h5 class="site-footer-title mb-4">Alamat Kantor</h5>
-
-                        <p class="d-flex border-bottom pb-3 mb-3 me-lg-3">
-                            <span>
-                                Perumahan Griya Pungging Asri 1
-                                Blok A.13, Dsn. Ketok RT/RW 05/05, Desa Tunggal Pager,
-                                Kec. Pungging, Kab. Mojokerto, Jawa Timur
-                            </span>
-                        </p>
-                        <br>
-                        <p class="copyright-text">Copyright © 2025 | Brantas Makmur Towing</p>
-                    </div>
-
-                        <div class="col-lg-2 col-12 ms-auto">
-                            <ul class="social-icon mt-lg-5 mt-3 mb-4">
-                                <li class="social-icon-item">
-                                    <a href="javascript:void(0)" class="social-icon-link bi-instagram"
-                                       onclick="window.open('https://www.instagram.com/brantasmakmur.towing', '_blank')"></a>
-                                  </li>
-                                  
-                                  <li class="social-icon-item">
-                                    <a href="javascript:void(0)" class="social-icon-link bi-whatsapp"
-                                       onclick="window.open('https://api.whatsapp.com/send?phone=6281332825750', '_blank')"></a>
-                                  </li>
-                                  
-                            </ul>
-                            
-                        </div>
-
-                </div>
-            </div>
-
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#81B29A" fill-opacity="1" d="M0,224L34.3,192C68.6,160,137,96,206,90.7C274.3,85,343,139,411,144C480,149,549,107,617,122.7C685.7,139,754,213,823,240C891.4,267,960,245,1029,224C1097.1,203,1166,181,1234,160C1302.9,139,1371,117,1406,106.7L1440,96L1440,320L1405.7,320C1371.4,320,1303,320,1234,320C1165.7,320,1097,320,1029,320C960,320,891,320,823,320C754.3,320,686,320,617,320C548.6,320,480,320,411,320C342.9,320,274,320,206,320C137.1,320,69,320,34,320L0,320Z"></path></svg>
+            <div id="footer-placeholder"></div>
         </footer>
 
 
@@ -328,7 +204,7 @@
         <script src="js/jquery.min.js"></script>
         <script src="js/bootstrap.bundle.min.js"></script>
         <script src="js/jquery.sticky.js"></script>
-        <script src="js/custom.js"></script>
+        <script src="js/custom.js"></script>        
 
     </body>
 </html>

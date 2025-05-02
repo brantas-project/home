@@ -22,47 +22,18 @@
               "@type": "LocalBusiness",
               "name": "Brantas Makmur Towing",
               "url": "https://www.brantastowing.id/bengkel",
-              "logo": "https://www.brantastowing.id/images/logo.png",
-              "image": "https://www.brantastowing.id/images/bengkel-illustration.jpg",
+              "logo": "https://raw.githubusercontent.com/brantas-project/home/refs/heads/main/images/logo-3.png",
+              "image": "https://raw.githubusercontent.com/brantas-project/home/refs/heads/main/images/bengkel.png",
               "description": "Daftar bengkel rekanan Brantas Makmur Towing yang siap membantu perbaikan mobil Anda di Sidoarjo, Surabaya, dan Mojokerto.",
               "areaServed": {
                 "@type": "Place",
                 "name": ["Sidoarjo", "Surabaya", "Mojokerto"]
               },
               "serviceType": "Towing dan Perbaikan Kendaraan",
-              "hasMap": "https://goo.gl/maps/..."
+              "hasMap": "https://maps.app.goo.gl/HLNMvia9Ae47H6SB9"
             }
         </script>
-        <script>
-            //Components
-            fetch("components/navbar.html")
-            .then(response => response.text())
-            .then(data => {
-                document.getElementById("navbar-placeholder").innerHTML = data;
-            });
-
-            fetch("components/nav-menu.html")
-            .then(response => response.text())
-            .then(data => {
-                document.getElementById("nav-menu-placeholder").innerHTML = data;
-            });
-
-            fetch("components/footer.html")
-            .then(response => response.text())
-            .then(data => {
-                document.getElementById("footer-placeholder").innerHTML = data;
-            });
-
-            function scrollToSection(id) {
-                const section = document.getElementById(id);
-                if (section) {
-                section.scrollIntoView({ behavior: 'smooth' });
-                } else {
-                window.location.href = 'index.html#' + id;
-                }
-            }
-        </script>
-
+        
         <!-- CSS FILES -->                
         <link rel="preconnect" href="https://fonts.googleapis.com">
 

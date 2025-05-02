@@ -30,6 +30,28 @@
   
   })(window.jQuery);
 
+  //COMPONENTS
+    fetch("components/nav-menu.html")
+    .then(response => response.text())
+    .then(data => {
+        document.getElementById("nav-menu-placeholder").innerHTML = data;
+    });
+
+    fetch("components/footer.html")
+    .then(response => response.text())
+    .then(data => {
+        document.getElementById("footer-placeholder").innerHTML = data;
+    });
+
+    function scrollToSection(id) {
+        const section = document.getElementById(id);
+        if (section) {
+        section.scrollIntoView({ behavior: 'smooth' });
+        } else {
+        window.location.href = 'index.html#' + id;
+        }
+    }
+
   //Submit Berlangganan
   document.getElementById("subscribeForm").addEventListener("submit", function(event) {
     event.preventDefault();

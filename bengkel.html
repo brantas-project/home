@@ -34,34 +34,32 @@
             }
         </script>
         <script>
-            //Components
-            fetch("components/navbar.html")
-            .then(response => response.text())
-            .then(data => {
-                document.getElementById("navbar-placeholder").innerHTML = data;
-            });
+  // Fungsi umum untuk memuat komponen HTML
+  function loadComponent(id, file) {
+    fetch(file)
+      .then(response => response.text())
+      .then(data => {
+        const target = document.getElementById(id);
+        if (target) target.innerHTML = data;
+      })
+      .catch(error => console.error("Gagal memuat komponen:", file, error));
+  }
 
-            fetch("components/nav-menu.html")
-            .then(response => response.text())
-            .then(data => {
-                document.getElementById("nav-menu-placeholder").innerHTML = data;
-            });
+  // Load komponen
+  loadComponent("navbar-placeholder", "components/navbar.html");
+  loadComponent("nav-menu-placeholder", "components/nav-menu.html");
+  loadComponent("footer-placeholder", "components/footer.html");
 
-            fetch("components/footer.html")
-            .then(response => response.text())
-            .then(data => {
-                document.getElementById("footer-placeholder").innerHTML = data;
-            });
-
-            function scrollToSection(id) {
-                const section = document.getElementById(id);
-                if (section) {
-                section.scrollIntoView({ behavior: 'smooth' });
-                } else {
-                window.location.href = 'index.html#' + id;
-                }
-            }
-        </script>
+  // Scroll section (digunakan di navbar)
+  function scrollToSection(id) {
+    const section = document.getElementById(id);
+    if (section) {
+      section.scrollIntoView({ behavior: 'smooth' });
+    } else {
+      window.location.href = 'index.html#' + id;
+    }
+  }
+</script>
 
         <!-- CSS FILES -->                
         <link rel="preconnect" href="https://fonts.googleapis.com">

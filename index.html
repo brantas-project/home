@@ -95,7 +95,16 @@
                                 <a class="nav-link dropdown-toggle" href="javascript:void(0)" id="navbarLightDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">Halaman</a>
 
                                 <ul class="dropdown-menu dropdown-menu-light" aria-labelledby="navbarLightDropdownMenuLink">
+                                    <li><a class="dropdown-item" href="javascript:void(0)" onclick="window.location.href='semua-artikel.html'">Semua Artikel</a>
+                                    </li>
+                                    
                                     <li><a class="dropdown-item" href="javascript:void(0)" onclick="window.location.href='semua-berita.html'">Semua Berita</a>
+                                    </li>  
+
+                                    <li><a class="dropdown-item" href="javascript:void(0)" onclick="window.location.href='jasa-towing.html'">Jasa Towing</a>
+                                    </li>
+
+                                    <li><a class="dropdown-item" href="javascript:void(0)" onclick="window.location.href='jasa-derek.html'">Jasa Derek</a>
                                     </li>
 
                                     <li><a class="dropdown-item" href="javascript:void(0)" onclick="window.location.href='bengkel.html'">Bengkel</a>
@@ -130,7 +139,7 @@
                     <!-- Tab Pesan Sekarang -->
                     <div class="tab-pane fade show active" id="pesan-sekarang" role="tabpanel" aria-labelledby="pesan-sekarang-tab">
                         <div class="text-center my-4">
-                            <h3><a href="javascript:void(0)" onclick="window.location.href='tel:6281332825750'" class="social-icon-item bi-telephone"> Panggilan Darurat</a></h3>
+                            <h3><a href="javascript:void(0)" onclick="window.location.href='tel:+6281332825750'" class="social-icon-item bi-telephone"> Panggilan Darurat</a></h3>
                         </div>                        
                         <hr>
                         <div class="text-center my-4">
@@ -143,60 +152,61 @@
                         </div>
                     </div>
             
-                    <!-- Tab Pesan Terjadwal -->
+                    <!-- FORM PEMESANAN JADWAL -->
                     <div class="tab-pane fade" id="pesan-terjadwal" role="tabpanel" aria-labelledby="pesan-terjadwal-tab">
-                        <!-- FORM PEMESANAN JADWAL -->
-                    <form id="scheduleFormPage2" class="custom-form member-login-form mt-4" action="#" method="post" role="form">
-                        <div class="customer-schedule-order">
-                            <div class="mb-4">
-                                <label class="form-label mb-2" for="nama-lengkap-2">Nama Lengkap</label>
-                                <input type="text" name="nama-lengkap" id="nama-lengkap-2" class="form-control" placeholder="Nama Lengkap" required>
-                            </div>
-                            <div class="mb-4">
-                                <label class="form-label mb-2" for="nomor-kontak-2">Telepon / Whatsapp</label>
-                                <input type="text" name="nomor-kontak" id="nomor-kontak-2" class="form-control" placeholder="Nomor Telepon / Whatsapp" required>
-                            </div>
-                            <div class="mb-4">
-                                <label class="form-label mb-2 d-block">Jenis Muatan</label>
-                                <div class="form-check form-check-inline">
-                                    <input class="form-check-input" type="radio" name="jenis-muatan-2" id="muatan-mobil-2" value="Mobil" required>
-                                    <label class="form-check-label" for="muatan-mobil-2">Mobil</label>
+                        
+                        <form id="scheduleFormPage2" class="custom-form order-form mt-4" action="#" method="post" role="form">
+                            <div class="customer-schedule-order">
+                                <div class="mb-4">
+                                    <label class="form-label mb-2" for="nama-lengkap-2">Nama Lengkap</label>
+                                    <input type="text" name="nama-lengkap" id="nama-lengkap-2" class="form-control" placeholder="Nama Lengkap" required>
                                 </div>
-                                <div class="form-check form-check-inline">
-                                    <input class="form-check-input" type="radio" name="jenis-muatan-2" id="muatan-motor-2" value="Motor">
-                                    <label class="form-check-label" for="muatan-motor-2">Motor</label>
+                                <div class="mb-4">
+                                    <label class="form-label mb-2" for="nomor-kontak-2">Telepon / Whatsapp</label>
+                                    <input type="text" name="nomor-kontak" id="nomor-kontak-2" class="form-control" placeholder="Nomor Telepon / Whatsapp" required>
                                 </div>
-                                <div class="form-check form-check-inline">
-                                    <input class="form-check-input" type="radio" name="jenis-muatan-2" id="muatan-lainnya-2" value="Lainnya">
-                                    <label class="form-check-label" for="muatan-lainnya-2">Lainnya</label>
+                                <div class="mb-4">
+                                    <label class="form-label mb-2 d-block">Jenis Muatan</label>
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="radio" name="jenis-muatan-2" id="muatan-mobil-2" value="Mobil" required>
+                                        <label class="form-check-label" for="muatan-mobil-2">Mobil</label>
+                                    </div>
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="radio" name="jenis-muatan-2" id="muatan-motor-2" value="Motor">
+                                        <label class="form-check-label" for="muatan-motor-2">Motor</label>
+                                    </div>
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="radio" name="jenis-muatan-2" id="muatan-lainnya-2" value="Lainnya">
+                                        <label class="form-check-label" for="muatan-lainnya-2">Lainnya</label>
+                                    </div>
+                                </div>                                
+                                <div class="mb-4">
+                                    <label class="form-label mb-2" for="lokasi-muat-2">Lokasi Muat</label>
+                                    <input type="text" name="lokasi-muat" id="lokasi-muat-2" class="form-control" placeholder="Lokasi Muat" required>
                                 </div>
-                            </div>                                
-                            <div class="mb-4">
-                                <label class="form-label mb-2" for="lokasi-muat-2">Lokasi Muat</label>
-                                <input type="text" name="lokasi-muat" id="lokasi-muat-2" class="form-control" placeholder="Lokasi Muat" required>
+                                <div class="mb-4">
+                                    <label class="form-label mb-2" for="alamat-tujuan-2">Alamat Tujuan</label>
+                                    <input type="text" name="alamat-tujuan" id="alamat-tujuan-2" class="form-control" placeholder="Alamat Tujuan" required>
+                                </div>
+                                <div class="mb-4">
+                                    <label class="form-label mb-2" for="tanggal-muat-2">Tanggal Muat</label>
+                                    <input type="date" name="tanggal-muat" id="tanggal-muat-2" class="form-control" placeholder="Tanggal Muat" required>
+                                </div>
+                                <div class="form-check mb-4">
+                                    <input class="form-check-input" type="checkbox" value="Ya" id="asuransi-2" name="asuransi">
+                                    <label class="form-check-label" for="asuransi-2">Centang jika ingin diasuransikan selama proses towing/derek.</label>
+                                </div>
+                                <div class="col-lg-5 col-md-7 col-8 mx-auto">
+                                    <button type="submit" class="form-control"><i class="bi-calendar-fill"></i> Buat</button>
+                                </div>
                             </div>
-                            <div class="mb-4">
-                                <label class="form-label mb-2" for="alamat-tujuan-2">Alamat Tujuan</label>
-                                <input type="text" name="alamat-tujuan" id="alamat-tujuan-2" class="form-control" placeholder="Alamat Tujuan" required>
-                            </div>
-                            <div class="mb-4">
-                                <label class="form-label mb-2" for="tanggal-muat-2">Tanggal Muat</label>
-                                <input type="date" name="tanggal-muat" id="tanggal-muat-2" class="form-control" placeholder="Tanggal Muat" required>
-                            </div>
-                            <div class="form-check mb-4">
-                                <input class="form-check-input" type="checkbox" value="Ya" id="asuransi-2" name="asuransi">
-                                <label class="form-check-label" for="asuransi-2">Centang jika ingin diasuransikan selama proses towing/derek.</label>
-                            </div>
-                            <div class="col-lg-5 col-md-7 col-8 mx-auto">
-                                <button type="submit" class="form-control"><i class="bi-calendar-fill"></i> Buat</button>
-                            </div>
-                        </div>
-                    </form>
+                        </form>
 
                     <!-- PESAN TERIMA KASIH -->
                     <div id="scheduleThanksPage2" style="display:none; padding: 20px; background-color: #f0f0f0; border-radius: 10px;">
-                        <h4>Terima kasih Anda telah menjadwalkan pengiriman kendaraan Anda.</h4>
-                        <p style="font-weight: bold; color: green;">Kami akan menghubungi Anda segera!</p>
+                        <h4>Terima kasih telah menjadwalkan pengiriman kendaraan Anda.</h4>
+                        <p style="font-weight: bold; color: green;">Tim kami akan segera menghubungi Anda melalui nomor telepon atau WhatsApp yang telah Anda berikan.</p>
+
                     </div>
 
                     </div>
@@ -475,8 +485,8 @@
                           </form>
                           
                           <div id="jadwalThanks" style="display: none; padding: 20px; background-color: #f0f0f0; border-radius: 10px;">
-                            <h4>Terima kasih Anda telah menjadwalkan pengiriman kendaraan Anda.</h4>
-                            <p style="font-weight: bold; color: green;">Kami akan menghubungi Anda segera!</p>
+                            <h4>Terima kasih telah menjadwalkan pengiriman kendaraan Anda.</h4>
+                            <p style="font-weight: bold; color: green;">Tim kami akan segera menghubungi Anda melalui nomor telepon atau WhatsApp yang telah Anda berikan.</p>
                           </div>
                           
                         </div>
@@ -491,10 +501,65 @@
                     <div class="row">
 
                         <div class="col-lg-12 col-12">
-                            <h2 class="mb-lg-3">Berita Terbaru</h2>
+                            <h2 class="mb-lg-3">Artikel Terbaru</h2>
                         </div>
 
                         <div class="row custom-block mb-3">
+                            <div class="col-lg-2 col-md-4 col-12 order-2 order-md-0 order-lg-0">
+                                <div class="custom-block-date-wrap d-flex d-lg-block d-md-block align-items-center mt-3 mt-lg-0 mt-md-0">
+                                    <h6 class="custom-block-date mb-lg-1 mb-0 me-3 me-lg-0 me-md-0">21</h6>
+                                    
+                                    <strong class="text-white">April 2025</strong>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-4 col-md-8 col-12 order-1 order-lg-0">
+                                <div class="custom-block-image-wrap">
+                                    <a href="#">
+                                        <img src="images/professional-golf-player.png" class="custom-block-image img-fluid" alt="subscriber">
+
+                                        <i class="custom-block-icon bi-link"></i>
+                                    </a>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-6 col-12 order-3 order-lg-0">
+                                <div class="custom-block-info mt-2 mt-lg-0">
+                                    <a href="#" class="events-title mb-3">Jasa Towing Brantas – Antar Kendaraan Aman di Hari Kartini</a>
+
+                                    <p class="mb-0">
+                                        Setiap tanggal 21 April, bangsa Indonesia memperingati Hari Kartini. Hari ini adalah momen penting untuk mengenang Raden Adjeng Kartini, sosok perempuan hebat yang membuka jalan bagi kemajuan perempuan Indonesia. Ia memperjuangkan hak perempuan untuk mendapatkan pendidikan, kesempatan, dan kesetaraan. Semangat Kartini tidak hanya hidup dalam buku sejarah, tapi juga menginspirasi berbagai bidang, termasuk dunia usaha dan pelayanan jasa.
+                                    </p>
+
+                                    <div class="d-flex flex-wrap border-top mt-4 pt-3">
+
+                                        <div class="mb-4 mb-lg-0">
+                                            <div class="d-flex flex-wrap align-items-center mb-1">
+                                                <span class="custom-block-span">Kategori:</span>
+
+                                                <p class="mb-0">Nasional</p>
+                                            </div>
+
+                                            <div class="d-flex flex-wrap align-items-center">
+                                                <span class="custom-block-span">Durasi Baca:</span>
+
+                                                <p class="mb-0">5 Menit</p>
+                                            </div>
+                                        </div>
+
+                                        <div class="d-flex align-items-center ms-lg-auto">
+                                            <a href="#" class="btn custom-btn">Baca Selengkapnya</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-12 col-12">
+                            <h2 class="mb-lg-3">Berita Terbaru</h2>
+                        </div>
+
+                        <div class="row custom-block custom-block-bg">
                             <div class="col-lg-2 col-md-4 col-12 order-2 order-md-0 order-lg-0">
                                 <div class="custom-block-date-wrap d-flex d-lg-block d-md-block align-items-center mt-3 mt-lg-0 mt-md-0">
                                     <h6 class="custom-block-date mb-lg-1 mb-0 me-3 me-lg-0 me-md-0">22</h6>
@@ -506,7 +571,7 @@
                             <div class="col-lg-4 col-md-8 col-12 order-1 order-lg-0">
                                 <div class="custom-block-image-wrap">
                                     <a href="#">
-                                        <img src="images/img-subscribe.jpg" class="custom-block-image img-fluid" alt="subscriber">
+                                        <img src="images/img-subscribe.jpg" class="custom-block-image img-fluid" alt="profesional-player">
 
                                         <i class="custom-block-icon bi-link"></i>
                                     </a>
@@ -527,66 +592,15 @@
 
                                         <div class="mb-4 mb-lg-0">
                                             <div class="d-flex flex-wrap align-items-center mb-1">
-                                                <span class="custom-block-span">Dokumen:</span>
+                                                <span class="custom-block-span">Lokasi Muat:</span>
 
-                                                <p class="mb-0">Pelayanan</p>
+                                                <p class="mb-0">Mojokerto</p>
                                             </div>
 
                                             <div class="d-flex flex-wrap align-items-center">
-                                                <span class="custom-block-span">Lokasi:</span>
+                                                <span class="custom-block-span">Lokasi Antar:</span>
 
-                                                <p class="mb-0">Mojokerto - Jember</p>
-                                            </div>
-                                        </div>
-
-                                        <div class="d-flex align-items-center ms-lg-auto">
-                                            <a href="#" class="btn custom-btn">Baca Selengkapnya</a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="row custom-block custom-block-bg">
-                            <div class="col-lg-2 col-md-4 col-12 order-2 order-md-0 order-lg-0">
-                                <div class="custom-block-date-wrap d-flex d-lg-block d-md-block align-items-center mt-3 mt-lg-0 mt-md-0">
-                                    <h6 class="custom-block-date mb-lg-1 mb-0 me-3 me-lg-0 me-md-0">21</h6>
-                                    
-                                    <strong class="text-white">April 2025</strong>
-                                </div>
-                            </div>
-
-                            <div class="col-lg-4 col-md-8 col-12 order-1 order-lg-0">
-                                <div class="custom-block-image-wrap">
-                                    <a href="#">
-                                        <img src="images/professional-golf-player.png" class="custom-block-image img-fluid" alt="profesional-player">
-
-                                        <i class="custom-block-icon bi-link"></i>
-                                    </a>
-                                </div>
-                            </div>
-
-                            <div class="col-lg-6 col-12 order-3 order-lg-0">
-                                <div class="custom-block-info mt-2 mt-lg-0">
-                                    <a href="#" class="events-title mb-3">Jasa Towing Brantas – Antar Kendaraan Aman di Hari Kartini</a>
-
-                                    <p class="mb-0">
-                                        Setiap tanggal 21 April, bangsa Indonesia memperingati Hari Kartini. Hari ini adalah momen penting untuk mengenang Raden Adjeng Kartini, sosok perempuan hebat yang membuka jalan bagi kemajuan perempuan Indonesia. Ia memperjuangkan hak perempuan untuk mendapatkan pendidikan, kesempatan, dan kesetaraan. Semangat Kartini tidak hanya hidup dalam buku sejarah, tapi juga menginspirasi berbagai bidang, termasuk dunia usaha dan pelayanan jasa.
-                                    </p>
-
-                                    <div class="d-flex flex-wrap border-top mt-4 pt-3">
-
-                                        <div class="mb-4 mb-lg-0">
-                                            <div class="d-flex flex-wrap align-items-center mb-1">
-                                                <span class="custom-block-span">Dokumen:</span>
-
-                                                <p class="mb-0">Artikel</p>
-                                            </div>
-
-                                            <div class="d-flex flex-wrap align-items-center">
-                                                <span class="custom-block-span">Lokasi:</span>
-
-                                                <p class="mb-0">Lokal</p>
+                                                <p class="mb-0">Jember</p>
                                             </div>
                                         </div>
 

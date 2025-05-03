@@ -11,6 +11,7 @@
   --dark-color:                   #000000;
   --p-color:                      #000000;
   --link-hover-color:             #F2CC8F;
+  --bg-white-transparent: rgba(255, 255, 255, 0.7);
 
   --body-font-family:             'DM Sans', sans-serif;
 
@@ -118,6 +119,13 @@ a:hover {
 b,
 strong {
   font-weight: var(--font-weight-bold);
+}
+
+.background-white {
+  background-color: var(--bg-white-transparent);
+  border-radius: 20px;
+  display: inline-block;
+  padding: 0.2em 0.5em;
 }
 
 
@@ -1033,6 +1041,7 @@ strong {
 -----------------------------------------*/
 .site-footer {
   position: relative;
+  padding-top: 10px;
   padding-bottom: 200px;
 }
 

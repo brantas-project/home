@@ -141,3 +141,21 @@
     .catch(error => {
       console.error('Gagal mengambil data lokasi:', error);
     });
+
+    //TESTIMONI
+    let currentTestimonial = 0;
+    const testimonials = document.querySelectorAll(".testimonial-card");
+  
+    function showTestimonial(index) {
+      testimonials.forEach((t, i) => {
+        t.classList.toggle("active", i === index);
+      });
+    }
+  
+    function changeTestimonial(step) {
+      currentTestimonial = (currentTestimonial + step + testimonials.length) % testimonials.length;
+      showTestimonial(currentTestimonial);
+    }
+  
+    showTestimonial(currentTestimonial);
+  

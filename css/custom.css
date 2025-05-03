@@ -1286,3 +1286,91 @@ strong {
     padding: 4px 12px;
   }
 }
+
+/* TAMBAHAN */
+.testimonial-section {
+  background: linear-gradient(to right, #e9f0f5, #f4f9fd);
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.testimonial-slider {
+  position: relative;
+  max-width: 800px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.testimonial-wrapper {
+  overflow: hidden;
+  width: 100%;
+  position: relative;
+}
+
+.testimonial-card {
+  display: none;
+  background-color: white;
+  padding: 30px 25px;
+  border-radius: 15px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+  animation: fade 0.5s ease-in-out;
+}
+
+.testimonial-card.active {
+  display: block;
+}
+
+.testimonial-card p {
+  font-size: 18px;
+  font-style: italic;
+  color: #333;
+  margin-bottom: 15px;
+}
+
+.testimonial-card h4 {
+  color: #0073aa;
+  font-weight: 600;
+}
+
+.testimonial-btn {
+  background-color: transparent;
+  border: none;
+  font-size: 32px;
+  color: #888;
+  cursor: pointer;
+  padding: 10px;
+  transition: color 0.3s ease;
+}
+
+.testimonial-btn:hover {
+  color: #0073aa;
+}
+
+@keyframes fade {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@media (max-width: 600px) {
+  .testimonial-card {
+    padding: 20px;
+  }
+  .testimonial-btn {
+    font-size: 26px;
+  }
+}
+
+.service-card {
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  padding: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+.service-card i {
+  font-size: 2rem;
+  color: #007bff;
+  margin-bottom: 0.5rem;
+}
